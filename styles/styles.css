@@ -14,6 +14,7 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
+  --red: red;
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
@@ -87,7 +88,7 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
+h1 { font-size: var(--heading-font-size-xxl); color: var(--red); }
 h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
