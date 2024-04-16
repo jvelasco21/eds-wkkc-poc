@@ -21,8 +21,8 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-  --script-font-family: 'WK Kellogg Script', Arial, Helvetica, sans-serif;
+  --body-font-family: 'Work Sans', arial, helvetica, sans-serif;
+  --script-font-family: 'WK Kellogg Script', arial, helvetica, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -84,12 +84,31 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl); color: var(--red); }
-h2 { font-size: var(--heading-font-size-xl); color: var(--link-color); }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
-h6 { font-size: var(--heading-font-size-xs) }
+h1 { 
+  font-size: var(--heading-font-size-xxl);
+  color: var(--red); 
+}
+
+h2 { 
+  font-size: var(--heading-font-size-xl);
+  color: var(--link-color);
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
