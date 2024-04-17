@@ -165,10 +165,6 @@
           {
             "name": "Light Colored Text",
             "value": "light-color"
-          },
-          {
-            "name": "Has Background Image",
-            "value": "has-background-img"
           }
         ]
       },

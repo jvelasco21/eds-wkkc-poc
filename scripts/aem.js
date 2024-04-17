@@ -480,6 +480,7 @@ function decorateSections(main) {
           styles.forEach((style) => section.classList.add(style));
         } else if (key === 'background') {
           const bg = meta.background;
+          section.classList.add('has-background-image');
           section.style.backgroundImage = `url(${bg})`;
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
