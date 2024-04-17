@@ -125,6 +125,13 @@
     "fields": [
       {
         "component": "text",
+        "valueType": "string",
+        "name": "class",
+        "label": "Class",
+        "value": ""
+      },
+      {
+        "component": "text",
         "valueType": "number",
         "name": "columns",
         "value": "",
