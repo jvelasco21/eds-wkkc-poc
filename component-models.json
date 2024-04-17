@@ -1,5 +1,34 @@
 [
   {
+    "id": "section",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Fade in Background",
+            "value": "fade-in"
+          },
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background",
+        "label": "Image",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "title",
     "fields": [
       {
@@ -179,16 +208,23 @@
       },
       {
         "component": "text",
-        "name": "eyebrowText",
+        "name": "eyebrow",
         "value": "",
-        "label": "Eyebrow Text",
+        "label": "Eyebrow",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "title",
         "value": "",
-        "label": "Text",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
         "valueType": "string"
       }
     ]
