@@ -132,6 +132,13 @@
       },
       {
         "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": ""
+      },
+      {
+        "component": "text",
         "valueType": "number",
         "name": "columns",
         "value": "",
