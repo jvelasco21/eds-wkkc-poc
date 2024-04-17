@@ -224,3 +224,12 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+main .section.light-color {
+  color: #fff;
+}
+
+main .section.has-background-image {
+  background-size: cover;
+  background-position: center;
+}

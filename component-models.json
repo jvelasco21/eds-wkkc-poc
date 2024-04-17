@@ -159,12 +159,16 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Fade in Background",
-            "value": "fade-in"
-          },
-          {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Light Colored Text",
+            "value": "light-color"
+          },
+          {
+            "name": "Has Background Image",
+            "value": "has-background-img"
           }
         ]
       },
@@ -203,7 +207,7 @@
       },
       {
         "component": "richtext",
-        "name": "title",
+        "name": "text",
         "value": "",
         "label": "Title",
         "valueType": "string"

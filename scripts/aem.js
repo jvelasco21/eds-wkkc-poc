@@ -478,6 +478,9 @@ function decorateSections(main) {
             .filter((style) => style)
             .map((style) => toClassName(style.trim()));
           styles.forEach((style) => section.classList.add(style));
+        } else if (key === 'background') {
+          const bg = meta.background;
+          section.style.backgroundImage = `url(${bg})`;
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
