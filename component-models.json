@@ -128,7 +128,7 @@
         "name": "style",
         "value": "",
         "label": "Style",
-        "valueType": "string",
+        "valueType": "classes",
         "options": [
           {
             "name": "Test Class",
