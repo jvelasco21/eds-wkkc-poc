@@ -124,11 +124,17 @@
     "id": "columns",
     "fields": [
       {
-        "component": "text",
+        "component": "multiselect",
         "name": "style",
         "value": "",
         "label": "Style",
-        "valueType": "string"
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Test Class",
+            "value": "test-class"
+          }
+        ]
       },
       {
         "component": "text",
