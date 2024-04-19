@@ -51,23 +51,6 @@
             "value": "h6"
           }
         ]
-      },
-      {
-        "component": "multiselect",
-        "valueType": "string",
-        "name": "classes",
-        "label": "Classes",
-        "value": "",
-        "options": [
-          {
-            "name": "Small",
-            "value": "title-small"
-          },
-          {
-            "name": "Large",
-            "value": "title-large"
-          }
-        ]
       }
     ]
   },
