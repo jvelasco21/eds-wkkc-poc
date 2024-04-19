@@ -13,12 +13,23 @@
 :root {
   /* colors */
   --primary-color: #c91245;
-  --link-color: #000;
+  --primary-hover: #a10e37;
+  --secondar-color: #000;
+  --black: #000;
+  --white: #fff;
+  --dark-grey: #333;
+  --medium-grey: #999;
+  --light-grey: #ccc;
+
+  /* color assignments */
+  --link-color: var(--secondar-color);
   --link-hover-color: var(--primary-color);
-  --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
+  --button-color: var(--primary-color);
+  --button-hover-color: var(--primary-hover);
+  --background-color: var(--white);
+  --light-color: var(--light-grey);
+  --dark-color: var(--dark-grey);
+  --text-color: var(--black);
 
   /* fonts */
   --body-font-family: 'Work Sans', arial, helvetica, sans-serif;
@@ -28,8 +39,8 @@
 
   /* body sizes */
   --body-font-size: 1rem;
-  --body-font-size-m: 22px;
-  --body-font-size-s: 18px;
+  --body-font-size-l: 1.5;
+  --body-font-size-m: 1.125rem;
   --body-font-size-xs: 16px;
 
   /* heading sizes */
@@ -41,9 +52,9 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 102px;
-  --nav-height-tablet: 115px;
-  --nav-height-desktop: 124px;
+  --nav-height: 82px;
+  --nav-height-tablet: 95px;
+  --nav-height-desktop: 104px;
 }
 
 @media (width >= 1024px) {
@@ -57,7 +68,7 @@
   }
 }
 
-*, *:after, *:before {
+*, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -135,7 +146,7 @@ p, dl, ol, ul, pre, blockquote {
 
 code, pre {
   font-family: var(--fixed-font-family);
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-font-size);
 }
 
 code {
@@ -244,4 +255,22 @@ main .section.light-color {
 main .section.has-background-image {
   background-size: cover;
   background-position: center;
+}
+
+main .section.hero-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 869px;
+  position: relative;
+}
+
+main .section.section.hero-section > .default-content-wrapper {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 767px;
+  
 }
