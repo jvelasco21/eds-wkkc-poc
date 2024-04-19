@@ -23,7 +23,10 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/title/v1/title",
-                "template": {}
+                "template": {
+                  "name": "Title",
+                  "model": "title"
+                }
               }
             }
           }
@@ -36,8 +39,6 @@
               "page": {
                 "resourceType": "core/franklin/components/image/v1/image",
                 "template": {
-                  "name": "Title",
-                  "model": "title"
                 }
               }
             }
