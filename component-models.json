@@ -53,11 +53,21 @@
         ]
       },
       {
-        "component": "text",
+        "component": "multiselect",
         "valueType": "string",
         "name": "classes",
+        "label": "Classes",
         "value": "",
-        "label": "Style"
+        "options": [
+          {
+            "name": "Small",
+            "value": "title-small"
+          },
+          {
+            "name": "Large",
+            "value": "title-large"
+          }
+        ]
       }
     ]
   },
