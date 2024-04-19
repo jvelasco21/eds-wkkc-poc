@@ -105,6 +105,7 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero",
+                  "filter": "hero",
                   "item_0": {
                     "model": "button"
                   }
