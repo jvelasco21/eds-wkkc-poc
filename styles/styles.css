@@ -12,9 +12,9 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
-  --red: red;
+  --primary-color: #c91245;
+  --link-color: #000;
+  --link-hover-color: var(--primary-color);
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
@@ -41,10 +41,12 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 102px;
+  --nav-height-tablet: 115px;
+  --nav-height-desktop: 124px;
 }
 
-@media (width >= 900px) {
+@media (width >= 1024px) {
   :root {
     --heading-font-size-xxl: 60px;
     --heading-font-size-xl: 48px;
@@ -53,6 +55,10 @@
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 22px;
   }
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
 }
 
 body {
@@ -74,6 +80,18 @@ header {
   height: var(--nav-height);
 }
 
+@media (width >= 1024px) {
+  header {
+    height: var(--nav-height-tablet);
+  }
+}
+
+@media (width >= 1060px) {
+  header {
+    height: var(--nav-height-desktop);
+  }
+}
+
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
@@ -86,7 +104,7 @@ h4, h5, h6 {
 
 h1 { 
   font-size: var(--heading-font-size-xxl);
-  color: var(--red); 
+  color: var(--primary-color); 
 }
 
 h2 { 
@@ -206,15 +224,9 @@ main .section {
   padding: 64px 16px;
 }
 
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
-  }
-}
-
-@media (width >= 900px) {
+@media (width >= 1024px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
   }
 }
