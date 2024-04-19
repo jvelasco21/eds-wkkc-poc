@@ -55,7 +55,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "style",
+        "name": "classes",
         "value": "",
         "label": "Style"
       }
