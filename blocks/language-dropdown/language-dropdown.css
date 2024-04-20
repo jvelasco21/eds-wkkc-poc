@@ -14,6 +14,9 @@
 
 .adobe-ue-edit .language-dropdown-wrapper {
     position: relative;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .footer-bottom .language-dropdown-wrapper {
