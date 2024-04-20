@@ -37,11 +37,5 @@
     "components": [
       "card"
     ]
-  },
-  {
-    "id": "language-dropdown",
-    "components": [
-      "text"
-    ]
   }
 ]
