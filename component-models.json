@@ -131,10 +131,6 @@
         "value": "",
         "options": [
           {
-            "name": "Header Column",
-            "value": "header-column"
-          },
-          {
             "name": "Numbered Column",
             "value": "numbered-column"
           },
@@ -194,8 +190,8 @@
             "value": "highlight"
           },
           {
-            "name": "Light Colored Text",
-            "value": "light-color"
+            "name": "Header Section",
+            "value": "header-section"
           },
           {
             "name": "Hero Section",
