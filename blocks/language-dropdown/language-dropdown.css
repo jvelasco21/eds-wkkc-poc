@@ -12,6 +12,10 @@
     visibility: hidden;
 }
 
+.adobe-ue-edit .language-dropdown-wrapper {
+    position: relative;
+}
+
 .footer-bottom .language-dropdown-wrapper {
     right: -104px;
     left: -104px;
