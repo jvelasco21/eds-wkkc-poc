@@ -299,7 +299,7 @@
     ]
   },
   {
-    "id": "hero",
+    "id": "language-dropdown",
     "fields": [
       {
         "component": "richtext",
