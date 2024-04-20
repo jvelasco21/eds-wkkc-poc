@@ -275,11 +275,10 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul a {
-    font-family: Work Sans, Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5625rem;
-    letter-spacing: -0.0009375rem;
+    letter-spacing: -0.0009rem;
     opacity: 0;
     padding: .5rem;
     text-align: left;

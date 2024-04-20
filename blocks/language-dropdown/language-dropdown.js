@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  /*let buttonColumn = '';
+  let buttonColumn = '';
   let iconString = '';
 
   if (block.closest('.header-top')) {
@@ -10,7 +10,7 @@ export default function decorate(block) {
   if (block.closest('.footer-bottom')) {
     buttonColumn = block.closest('.footer-bottom').querySelector('.button-container');
     iconString = '.icon-nav-arrow-light';
-  }*/
+  }
 
   const languageWrapper = block.closest('.language-dropdown-wrapper');
   const langaugeButtonColumn = buttonColumn;
