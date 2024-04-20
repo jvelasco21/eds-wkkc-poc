@@ -29,7 +29,7 @@
       "cards",
       "columns",
       "teaser",
-      "language-dropdown"
+      "languageDropdown"
     ]
   },
   {
@@ -39,10 +39,10 @@
     ]
   },
   {
-    "id": "language-dropdown",
+    "id": "languageDropdown",
     "components": [
-      "button",
-      "text"
+      "text",
+      "button"
     ]
   }
 ]
