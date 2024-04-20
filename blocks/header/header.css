@@ -296,3 +296,32 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+header nav .nav-tools .button {
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  background: transparent;
+  margin: 0;
+  color: unset;
+  border-radius: 0;
+  display: block;
+}
+
+header nav .nav-tools .button .icon-search,
+header nav .nav-tools .button .icon-chat {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+header nav .nav-tools .button img {
+  display: block;
+}
+
+@media (width >= 1024px) {
+  header nav .nav-tools > .default-content-wrapper {
+    display: flex;
+    gap: 1.75rem;
+  }
+}
