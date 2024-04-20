@@ -131,8 +131,8 @@
         "value": "",
         "options": [
           {
-            "name": "Class 1",
-            "value": "class-1"
+            "name": "Numbered Column",
+            "value": "numbered-column"
           },
           {
             "name": "Class 2",
@@ -294,6 +294,25 @@
         "name": "description",
         "value": "",
         "label": "Description",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "language-dropdown",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Class",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
         "valueType": "string"
       }
     ]

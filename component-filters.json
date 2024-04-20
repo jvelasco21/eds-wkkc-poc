@@ -29,20 +29,13 @@
       "cards",
       "columns",
       "teaser",
-      "languageDropdown"
+      "language-dropdown"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "languageDropdown",
-    "components": [
-      "text",
-      "button"
     ]
   }
 ]
