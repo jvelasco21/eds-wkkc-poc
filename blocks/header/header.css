@@ -322,8 +322,12 @@ header nav .nav-tools .button img {
 @media (width >= 1024px) {
   header nav .nav-tools > .default-content-wrapper {
     display: flex;
-    gap: 1.75rem;
+    gap: 1rem;
     align-items: center;
+  }
+
+  header nav .nav-tools .button-container:first-child .button {
+    margin-right: .5rem;
   }
 
   header nav .nav-tools .button-container:last-child .button {
@@ -336,13 +340,19 @@ header nav .nav-tools .button img {
     text-transform: uppercase;
     letter-spacing: -0.0009rem;
     border-radius: 1.25rem;
-    background-color: #eee;
+    background-color: var(--white);
     position: relative;
+    margin-right: 0.625rem;
+  }
+
+  header nav .nav-tools .button-container:last-child .button:hover {
+    box-shadow: 0 4px 10px 0 rgba(0 0 0 / 15%);
   }
 
   header nav .nav-tools .button-container:last-child .icon {
     position: absolute;
-    height: 16px;
-    width: 16px;
+    height: .9375rem;
+    width: .9375rem;
+    right: .9375rem;
   }
 }

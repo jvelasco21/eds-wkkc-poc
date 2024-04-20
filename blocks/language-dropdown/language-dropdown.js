@@ -2,9 +2,9 @@ export default function decorate(block) {
   let buttonColumn = '';
   let iconString = '';
 
-  if (block.closest('.header-top')) {
-    buttonColumn = block.closest('.header-top').querySelector('.utility-column-5');
-    iconString = '.icon-nav-arrow';
+  if (block.closest('.header')) {
+    buttonColumn = block.closest('.header').querySelector('.nav-tools .icon-chevron');
+    iconString = '.icon-chevron';
   }
 
   if (block.closest('.footer-bottom')) {
@@ -15,7 +15,6 @@ export default function decorate(block) {
   const languageWrapper = block.closest('.language-dropdown-wrapper');
   const langaugeButtonColumn = buttonColumn;
   const languageButton = langaugeButtonColumn.querySelector('.button');
-  const buttonGlobe = languageButton.querySelector('.icon-globesmall');
   const buttonArrow = languageButton.querySelector(iconString);
   const languageItems = block.querySelectorAll('.language-dropdown li');
   block.querySelector('.language-dropdown li').classList.add('active');
@@ -36,7 +35,6 @@ export default function decorate(block) {
       block.querySelector('.language-dropdown li.active').classList.remove('active');
       item.classList.add('active');
       languageButton.textContent = item.textContent;
-      languageButton.prepend(buttonGlobe);
       languageButton.append(buttonArrow);
       animateDropdown();
       e.preventDefault();
