@@ -320,17 +320,18 @@ header nav .nav-tools .button img {
 }
 
 @media (width >= 1024px) {
-  header nav .nav-tools > .default-content-wrapper {
+  header nav .nav-tools .columns > div {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-direction: row;
   }
 
-  header nav .nav-tools .button-container:first-child .button {
+  header nav .nav-tools .numbered-column-1 .button {
     margin-right: .5rem;
   }
 
-  header nav .nav-tools .button-container:last-child .button {
+  header nav .nav-tools .numbered-column-3 .button {
     height: 48px;
     width: 130px;
     padding: 0 2.125rem 0 1rem;
@@ -345,11 +346,11 @@ header nav .nav-tools .button img {
     margin-right: 0.625rem;
   }
 
-  header nav .nav-tools .button-container:last-child .button:hover {
+  header nav .nav-tools .numbered-column-3 .button:hover {
     box-shadow: 0 4px 10px 0 rgba(0 0 0 / 15%);
   }
 
-  header nav .nav-tools .button-container:last-child .icon {
+  header nav .nav-tools .numbered-column-3 .icon {
     position: absolute;
     height: .9375rem;
     width: .9375rem;

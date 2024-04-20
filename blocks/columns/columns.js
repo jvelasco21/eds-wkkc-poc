@@ -4,7 +4,7 @@ export default function decorate(block) {
 
   // setup image columns
   [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
+    [...row.children].forEach((col, i) => {
       const pic = col.querySelector('picture');
       if (pic) {
         const picWrapper = pic.closest('div');
@@ -12,6 +12,12 @@ export default function decorate(block) {
           // picture is only content in column
           picWrapper.classList.add('columns-img-col');
         }
+      }
+
+      // numbered columns
+      if (col.closest('.numbered-column') !== null) {
+        col.classList.add('numbered-column');
+        col.classList.add(`numbered-column-${i + 1}`);
       }
     });
   });

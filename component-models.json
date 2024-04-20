@@ -131,6 +131,10 @@
         "value": "",
         "options": [
           {
+            "name": "Header Column",
+            "value": "header-column"
+          },
+          {
             "name": "Numbered Column",
             "value": "numbered-column"
           },
