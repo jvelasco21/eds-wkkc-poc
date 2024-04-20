@@ -323,5 +323,26 @@ header nav .nav-tools .button img {
   header nav .nav-tools > .default-content-wrapper {
     display: flex;
     gap: 1.75rem;
+    align-items: center;
+  }
+
+  header nav .nav-tools .button-container:last-child .button {
+    height: 48px;
+    width: 130px;
+    padding: 0 2.125rem 0 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.0009rem;
+    border-radius: 1.25rem;
+    background-color: #eee;
+    position: relative;
+  }
+
+  header nav .nav-tools .button-container:last-child .icon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
   }
 }
