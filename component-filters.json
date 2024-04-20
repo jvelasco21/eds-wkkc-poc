@@ -28,13 +28,20 @@
       "hero",
       "cards",
       "columns",
-      "teaser"
+      "teaser",
+      "language-dropdown"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "language-dropdown",
+    "components": [
+      "text"
     ]
   }
 ]
