@@ -55,10 +55,6 @@ header nav p {
   line-height: 1;
 }
 
-header nav a:any-link {
-  color: currentcolor;
-}
-
 /* hamburger */
 header nav .nav-hamburger {
   grid-area: hamburger;
@@ -181,6 +177,7 @@ header nav .nav-sections ul  {
 header nav .nav-sections ul > li,
 header nav .nav-sections ul > li > a {
   font-weight: 700;
+  transition: 280ms all 120ms ease-out;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -213,13 +210,13 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .nav-drop {
     position: relative;
-    padding-right: 16px;
+    padding-right: 0;
     cursor: pointer;
   }
 
   header nav .nav-sections .nav-drop::after {
     content: '';
-    display: inline-block;
+    display: none;
     position: absolute;
     top: .5em;
     right: 2px;
@@ -250,35 +247,49 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
-    display: none;
-    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 .15rem .25rem rgba(0 0 0 / 25%);
+    left: 50%;
+    width: 184px;
+    opacity: .3;
+    padding: .8rem 1.2rem;
+    position: absolute;
+    top: calc(99.75%);
+    transform-origin: top center;
+    transform: rotateX(-90deg) translateX(-50%);
+    transition: 280ms all 120ms ease-out;
+    visibility: hidden;
+    flex-direction: column;
+    gap: 0;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul {
-    display: block;
-    position: absolute;
-    left: -1em;
-    width: 200px;
-    margin-top: 12px;
-    padding: 1em;
-    background-color: var(--light-color);
-    white-space: initial;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+  header nav .nav-sections .default-content-wrapper > ul > li:hover > ul {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
+    padding: 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul a {
+    font-family: Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5625rem;
+    letter-spacing: -0.0009375rem;
+    opacity: 0;
+    padding: .5rem;
+    text-align: left;
+    transition: 280ms all 120ms ease-out;
+    white-space: normal;
+    display: block;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li:hover > ul a {
+    opacity: 1;
   }
 }
 

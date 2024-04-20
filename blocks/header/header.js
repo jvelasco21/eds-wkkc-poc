@@ -126,6 +126,16 @@ export default async function decorate(block) {
         }
       });
     });
+
+    navSections.querySelectorAll('.button').forEach((button) => {
+      const parentLi = button.closest('li');
+      const parentDiv = button.closest('.button-container');
+      if (parentLi) {
+        parentLi.prepend(button);
+        parentDiv.remove();
+      }
+      button.classList.remove('button');
+    });
   }
 
   // hamburger for mobile
