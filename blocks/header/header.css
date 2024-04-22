@@ -10,7 +10,7 @@ header nav {
   box-sizing: border-box;
   display: grid;
   grid-template:
-    'hamburger brand tools' var(--nav-height)
+    'brand tools hamburger' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 2em;
@@ -24,11 +24,12 @@ header nav {
 
 header nav[aria-expanded="true"] {
   grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
+    'brand hamburger' var(--nav-height)
+    'tools tools' var(--nav-height)
+    'sections sections' 1fr;
   overflow-y: auto;
   min-height: 100vh;
+  align-items: start;
 }
 
 @media (width >= 1024px) {
@@ -41,10 +42,11 @@ header nav[aria-expanded="true"] {
   header nav[aria-expanded="true"] {
     min-height: 0;
     overflow: visible;
+    align-items: center;
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 1260px) {
   header nav {
     height: var(--nav-height-desktop);
   }
@@ -58,13 +60,15 @@ header nav p {
 /* hamburger */
 header nav .nav-hamburger {
   grid-area: hamburger;
-  height: 22px;
+  height: 40px;
   display: flex;
   align-items: center;
+  padding-right: 1rem;
 }
 
 header nav .nav-hamburger button {
-  height: 22px;
+  height: 40px;
+  width: 40px;
   margin: 0;
   border: 0;
   border-radius: 0;
@@ -82,7 +86,8 @@ header nav .nav-hamburger-icon::after {
   box-sizing: border-box;
   display: block;
   position: relative;
-  width: 20px;
+  width: 24px;
+  float: right;
 }
 
 header nav .nav-hamburger-icon::before,
@@ -95,17 +100,21 @@ header nav .nav-hamburger-icon::after {
 header nav[aria-expanded="false"] .nav-hamburger-icon,
 header nav[aria-expanded="false"] .nav-hamburger-icon::before,
 header nav[aria-expanded="false"] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
+  height: 5px;
+  border-radius: 5px;
   background: currentcolor;
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon::before {
-  top: -6px;
+  top: -16px;
+  right: 0;
+  width: 40px;
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon::after {
-  top: 6px;
+  top: 16px;
+  right: 0;
+  width: 40px;
 }
 
 header nav[aria-expanded="true"] .nav-hamburger-icon {
@@ -147,7 +156,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 176px;
   height: auto;
   display: block;
 }
@@ -178,6 +187,7 @@ header nav .nav-sections ul > li,
 header nav .nav-sections ul > li > a {
   font-weight: 700;
   transition: 280ms all 120ms ease-out;
+  text-align: center;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -194,13 +204,13 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-brand img {
-    width: 221px;
+    width: 180px;
   }
 
   header nav .nav-sections {
     display: block;
     visibility: visible;
-    white-space: nowrap;
+    white-space: normal;
     flex: unset;
   }
 
@@ -244,6 +254,8 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -292,6 +304,12 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
+@media (width >= 1260px) {
+  header nav .nav-brand img {
+    width: 221px;
+  }
+}
+
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
@@ -305,7 +323,16 @@ header nav .nav-tools .button {
   margin: 0;
   color: unset;
   border-radius: 0;
-  display: block;
+  display: inline-block;
+}
+
+header nav[aria-expanded="false"] .nav-tools .numbered-column-1 .button-container {
+  text-align: right;
+}
+
+header nav[aria-expanded="false"] .nav-tools .numbered-column-2,
+header nav[aria-expanded="false"] .nav-tools .numbered-column-3 {
+  display: none;
 }
 
 header nav .nav-tools .button .icon-search,
@@ -327,14 +354,20 @@ header nav .nav-tools .button img {
     flex-direction: row;
   }
 
+  header nav .nav-tools .button .icon-search,
+  header nav .nav-tools .button .icon-chat {
+    width: 30px;
+    height: 30px;
+  }
+
   header nav .nav-tools .numbered-column-1 .button {
     margin-right: .5rem;
   }
 
   header nav .nav-tools .numbered-column-3 .button {
     height: 48px;
-    width: 130px;
-    padding: 0 2.125rem 0 1rem;
+    width: 115px;
+    padding: 0 .625rem;
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -355,5 +388,24 @@ header nav .nav-tools .button img {
     height: .9375rem;
     width: .9375rem;
     right: .9375rem;
+    transition: .15s;
+    transform: rotate(0);
+  }
+
+  header nav .nav-tools .numbered-column-3 .active .icon {
+    transform: rotate(180deg);
+  }
+}
+
+@media (width >= 1260px) {
+  header nav .nav-tools .button .icon-search,
+  header nav .nav-tools .button .icon-chat {
+    width: 40px;
+    height: 40px;
+  }
+
+  header nav .nav-tools .numbered-column-3 .button {
+    width: 130px;
+    padding: 0 2.125rem 0 1rem;
   }
 }

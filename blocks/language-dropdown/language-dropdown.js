@@ -2,8 +2,8 @@ export default function decorate(block) {
   let buttonColumn = '';
   let iconString = '';
 
-  if (block.closest('.header')) {
-    buttonColumn = block.closest('.header').querySelector('.nav-tools .icon-chevron');
+  if (block.closest('.header-section')) {
+    buttonColumn = block.closest('.header-section').querySelector('.numbered-column-3');
     iconString = '.icon-chevron';
   }
 

@@ -97,7 +97,7 @@ header {
   }
 }
 
-@media (width >= 1060px) {
+@media (width >= 1260px) {
   header {
     height: var(--nav-height-desktop);
   }
