@@ -4,8 +4,23 @@
     "fields": [
       {
         "component": "text",
+        "name": "template",
+        "label": "Template"
+      },
+      {
+        "component": "text",
         "name": "theme",
         "label": "Theme"
+      },
+      {
+        "component": "text",
+        "name": "nav",
+        "label": "Nav"
+      },
+      {
+        "component": "text",
+        "name": "footer",
+        "label": "Footer"
       }
     ]
   },
