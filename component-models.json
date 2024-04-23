@@ -227,6 +227,23 @@
     "id": "hero",
     "fields": [
       {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Homepage Hero",
+            "value": "hero-homepage"
+          },
+          {
+            "name": "Interior Hero Alt",
+            "value": "hero-interior"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
