@@ -166,7 +166,8 @@
                   "name": "Teaser",
                   "model": "teaser",
                   "title": "this is the title",
-                  "text": "text is here"
+                  "text": "text is here",
+                  "description": "description!"
                 }
               }
             }
