@@ -195,6 +195,7 @@ a.button:any-link, button {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+  transition: background-color 200ms;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {

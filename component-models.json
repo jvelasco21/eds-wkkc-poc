@@ -311,20 +311,20 @@
         "valueType": "string",
         "name": "cta1Text",
         "value": "",
-        "label": "Text"
+        "label": "Link Text"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "cta1Title",
         "value": "",
-        "label": "Title"
+        "label": "Link Title"
       },
       {
         "component": "select",
         "name": "cta1Type",
         "value": "",
-        "label": "Type",
+        "label": "Link Type",
         "valueType": "string",
         "options": [
           {
