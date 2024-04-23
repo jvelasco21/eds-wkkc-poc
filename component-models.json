@@ -230,7 +230,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image",
+        "label": "Background Image",
         "multi": false
       },
       {
@@ -241,11 +241,32 @@
         "value": ""
       },
       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image2",
+        "label": "Secondary Image",
+        "multi": false
+      },
+      {
         "component": "text",
-        "name": "eyebrow",
-        "value": "",
-        "label": "Eyebrow",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "image2Alt",
+        "label": "Secondary Alt Text",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image3",
+        "label": "Secondary Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "image3Alt",
+        "label": "Secondary Mobile Alt Text",
+        "value": ""
       },
       {
         "component": "richtext",
@@ -260,6 +281,48 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "cta1Type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
       }
     ]
   },
