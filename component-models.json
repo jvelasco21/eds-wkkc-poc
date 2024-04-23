@@ -328,7 +328,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "ctaTitle",
+        "name": "cta1Title",
         "value": "",
         "label": "Title"
       },
