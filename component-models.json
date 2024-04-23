@@ -314,27 +314,27 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "href_1",
+        "name": "cta1",
         "value": "",
         "label": "Link"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "href_1_text",
+        "name": "cta1Text",
         "value": "",
         "label": "Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "href_1_title",
+        "name": "ctaTitle",
         "value": "",
         "label": "Title"
       },
       {
         "component": "select",
-        "name": "href_1_type",
+        "name": "cta1Type",
         "value": "",
         "label": "Type",
         "valueType": "string",
