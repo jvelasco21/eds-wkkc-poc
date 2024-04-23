@@ -9,7 +9,7 @@ main .hero-container {
 .hero {
   position: relative;
   padding: 32px;
-  min-height: 869px;
+  min-height: 400px;
 }
 
 .hero h1 {
@@ -31,4 +31,59 @@ main .hero-container {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+/* wkkellogg.com */
+.hero-homepage p {
+  margin: 0;
+}
+
+.hero-homepage .hero-foreground picture {
+  position: relative;
+}
+
+.hero-homepage .hero-foreground .hero-foreground-item-1 {
+  display: none;
+}
+
+.hero-homepage .hero-foreground .hero-foreground-item-2 {
+  max-width: 85%;
+}
+
+.hero-homepage a.button {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.0002rem;
+  display: inline-flex;
+  gap: 1rem;
+  border-radius: 3.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (width >= 1024px) {
+  .hero-homepage {
+    padding: 2rem;
+    min-height: 54.3125rem;
+  }
+
+  .hero-homepage .hero-foreground {
+    max-width: 44.75rem;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    bottom: 10.625rem;
+  }
+
+  .hero-homepage .hero-foreground .hero-foreground-item-1 {
+    display: block;
+  }
+  
+  .hero-homepage .hero-foreground .hero-foreground-item-2 {
+    display: none;
+  }
 }
