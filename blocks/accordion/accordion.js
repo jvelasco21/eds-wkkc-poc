@@ -5,9 +5,12 @@ function hasWrapper(el) {
 }
 
 let isIfrmae = false;
+console.log(isIfrmae);
 export default function decorate(block) {
   iniFrame();
   if (!isIfrmae) {
+
+    console.log(isIfrmae);
     [...block.children].forEach((row) => {
       // decorate accordion item label
       const label = row.children[0];
