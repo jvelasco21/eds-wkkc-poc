@@ -91,7 +91,7 @@ function createSlide(row, slideIndex, carouselId) {
 
 let carouselId = 0;
 export default async function decorate(block) {
-  console.log(!block.closest('.adobe-ue-edit') || block.hasAttribute('data-aue-resource'));
+  console.log(block);
   carouselId += 1;
   block.setAttribute('id', `carousel-${carouselId}`);
   const rows = block.querySelectorAll(':scope > div');
