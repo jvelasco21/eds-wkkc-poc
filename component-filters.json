@@ -30,8 +30,7 @@
       "cards",
       "columns",
       "teaser",
-      "language-dropdown",
-      "carousel"
+      "language-dropdown"
     ]
   },
   {
@@ -42,6 +41,8 @@
   },
   {
     "id": "carousel",
-    "components": []
+    "components": [
+      "carousel-slide"
+    ]
   }
 ]
