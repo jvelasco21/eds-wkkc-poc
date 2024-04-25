@@ -1,5 +1,17 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
+
+function iniFrame() {
+  if (window.location !== window.parent.location) {
+      // The page is in an iFrames
+     console.log("The page is in an iFrame");
+  }
+  else {
+      // The page is not in an iFrame
+      console.log("The page is not in an iFrame");
+  }
+}
+
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
@@ -91,6 +103,7 @@ function createSlide(row, slideIndex, carouselId) {
 
 let carouselId = 0;
 export default async function decorate(block) {
+  iniFrame();
   carouselId += 1;
   block.setAttribute('id', `carousel-${carouselId}`);
   const rows = block.querySelectorAll(':scope > div');
