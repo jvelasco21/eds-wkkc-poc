@@ -176,25 +176,10 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
-                  "name": "Carousel",
-                  "filter": "carousel"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Carousel Slide",
-          "id": "carousel-slide",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Carousel Slide",
-                  "model": "carousel-slide"
+                  "columns": "2",
+                  "rows": "1"
                 }
               }
             }

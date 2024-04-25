@@ -42,8 +42,6 @@
   },
   {
     "id": "carousel",
-    "components": [
-      "carousel-slide"
-    ]
+    "components": []
   }
 ]
