@@ -91,7 +91,7 @@ function createSlide(row, slideIndex, carouselId) {
 
 let carouselId = 0;
 export default async function decorate(block) {
-  console.log(block.closest('.adobe-ue-edit'));
+  //console.log(block.closest('.adobe-ue-edit'));
   if (!block.closest('.adobe-ue-edit')) {
     carouselId += 1;
     block.setAttribute('id', `carousel-${carouselId}`);
