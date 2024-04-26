@@ -734,7 +734,8 @@ async function waitForLCP(lcpBlocks) {
  * in order to prevent JS from interfering with the
  * Universal Editor authoring experience
  */
-export const isIframe = false;
+// eslint-disable-next-line import/no-mutable-exports
+export let isIframe = false;
 export function inIframeFunc() {
   if (window.location !== window.parent.location) {
     // The page is in an iFrames
