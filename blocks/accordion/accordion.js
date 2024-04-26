@@ -1,20 +1,12 @@
-let isIfrmae = false;
-function iniFrame() {
-  if (window.location !== window.parent.location) {
-    // The page is in an iFrames
-    isIfrmae = true;
-  }
-}
+import { inIframeFunc, isIframe } from "../../scripts/aem.js";
 
 function hasWrapper(el) {
   return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
 }
 
-console.log(isIfrmae);
 export default function decorate(block) {
-  iniFrame();
-  if (!isIfrmae) {
-    console.log(isIfrmae);
+  inIframeFunc();
+  if (!isIframe) {
     [...block.children].forEach((row) => {
       // decorate accordion item label
       const label = row.children[0];

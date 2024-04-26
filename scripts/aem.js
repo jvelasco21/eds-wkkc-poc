@@ -729,6 +729,19 @@ async function waitForLCP(lcpBlocks) {
   });
 }
 
+/**
+ * Exports isIframe global variable and inIframeFunc function
+ * in order to prevent JS from interfering with the
+ * Universal Editor authoring experience 
+ */
+export let isIframe = false;
+export function inIframeFunc() {
+  if (window.location !== window.parent.location) {
+    // The page is in an iFrames
+    isIframe = true;
+  }
+}
+
 init();
 
 export {
