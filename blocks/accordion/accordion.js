@@ -1,4 +1,4 @@
-import { inIframeFunc, isIframe } from "../../scripts/aem.js";
+import { inIframeFunc, isIframe } from '../../scripts/aem.js';
 
 function hasWrapper(el) {
   return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';

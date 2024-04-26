@@ -1,4 +1,4 @@
-import { fetchPlaceholders, inIframeFunc, isIframe  } from '../../scripts/aem.js';
+import { fetchPlaceholders, inIframeFunc, isIframe } from '../../scripts/aem.js';
 
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
@@ -151,5 +151,3 @@ export default async function decorate(block) {
     }
   }
 }
-
-export { iniFrame };
