@@ -52,5 +52,11 @@
     "components": [
       "accordion-item"
     ]
+  },
+  {
+    "id": "tab",
+    "components": [
+      "tab-item"
+    ]
   }
 ]
