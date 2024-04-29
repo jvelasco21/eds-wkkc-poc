@@ -35,3 +35,43 @@
 .columns.numbered-column > div {
   position: relative;
 }
+
+.columns.logo-grid {
+
+}
+
+@media (width >= 1024px) {
+  .columns.two-thirds-column > div > div:first-child {
+    flex-basis: 66.6666%;
+  }
+
+  .columns.two-thirds-column > div > div:last-child {
+    flex-basis: 33.3333%;
+  }
+
+  .columns.logo-grid > div {
+    gap: 0;
+  }
+
+  .columns.logo-grid > div > div:first-child {
+    grid-gap: .625rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 5.3125rem;
+  }
+
+  .columns.logo-grid > div > div:first-child p {
+    margin: 0;
+    padding: .625rem;
+    position: relative;
+  }
+
+  .columns.logo-grid img {
+    width: 85%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
