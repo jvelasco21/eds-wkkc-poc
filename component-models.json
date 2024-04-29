@@ -25,6 +25,35 @@
     ]
   },
   {
+    "id": "text",
+    "fields": [
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Homepage Hero",
+            "value": "hero-homepage"
+          },
+          {
+            "name": "Interior Hero Alt",
+            "value": "hero-interior"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      }
+    ]
+  },
+  {
     "id": "title",
     "fields": [
       {
@@ -268,10 +297,6 @@
           {
             "name": "Header Section",
             "value": "header-section"
-          },
-          {
-            "name": "Hero Section",
-            "value": "hero-section"
           },
           {
             "name": "Primary Background",

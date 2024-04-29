@@ -289,20 +289,10 @@ main .section.has-background-image {
   background-position: center;
 }
 
-main .section.hero-section {
-  max-width: 1440px;
-  margin: 0 auto;
-  min-height: 869px;
-  position: relative;
+main .section.primary-bg-section {
+  padding: 0;
 }
 
-main .section.section.hero-section > .default-content-wrapper {
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 85%;
-  max-width: 767px;
-  
+main .section.primary-bg-section > div {
+  background-color: var(--primary-color);
 }
