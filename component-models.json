@@ -130,6 +130,10 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "text-and-icon",
+            "value": "text-and-icon"
           }
         ]
       }
@@ -395,6 +399,10 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "text-and-icon",
+            "value": "text-and-icon"
           }
         ]
       }
@@ -501,6 +509,10 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "text-and-icon",
+            "value": "text-and-icon"
           }
         ]
       }

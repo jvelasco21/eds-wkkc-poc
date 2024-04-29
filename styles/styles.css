@@ -120,7 +120,7 @@ h1 {
 
 h2 { 
   font-size: var(--heading-font-size-xl);
-  color: var(--link-color);
+  color: var(--primary-color); 
 }
 
 h3 {
