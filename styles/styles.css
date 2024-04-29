@@ -294,4 +294,5 @@ main .section.primary-bg-section {
 
 main .section.primary-bg-section > div {
   background-color: var(--primary-color);
+  padding: 3.875rem 8.375rem;
 }

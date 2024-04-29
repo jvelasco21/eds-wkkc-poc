@@ -193,6 +193,10 @@
               {
                 "name": "Light Text",
                 "value": "light-text"
+              },
+              {
+                "name": "Large Text",
+                "value": "large-text"
               }
             ]
           },

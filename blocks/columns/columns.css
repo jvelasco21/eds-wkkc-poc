@@ -36,7 +36,27 @@
   position: relative;
 }
 
+.columns.light-text {
+  color: var(--white);
+}
+
+.columns.large-text p {
+  font-size: 2rem;
+  line-height: 2.6875rem;
+  font-weight: 300;
+  letter-spacing: -0.00009375rem;
+  margin: 2rem 0;
+}
+
 @media (width >= 1024px) {
+  .columns.one-thirds-column > div > div:first-child {
+    flex-basis: 33.3333%;
+  }
+
+  .columns.one-thirds-column > div > div:last-child {
+    flex-basis: 66.6666%;
+  }
+
   .columns.two-thirds-column > div > div:first-child {
     flex-basis: 66.6666%;
   }
