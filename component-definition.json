@@ -13,7 +13,8 @@
                 "resourceType": "core/franklin/components/text/v1/text",
                 "template": {
                   "name": "Text",
-                  "model": "text"}
+                  "model": "text"
+                }
               }
             }
           }
@@ -37,8 +38,7 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/image/v1/image",
-                "template": {
-                }
+                "template": {}
               }
             }
           }
