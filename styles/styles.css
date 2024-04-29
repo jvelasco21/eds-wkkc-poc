@@ -179,27 +179,23 @@ a:hover {
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
-  display: inline-block;
+  display: inline-flex;
+  gap: .5rem;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
-  transition: background-color 200ms;
+  transition: 200ms;
+  text-transform: uppercase;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--primary-hover);
   cursor: pointer;
 }
 
@@ -208,10 +204,31 @@ button:disabled, button:disabled:hover {
   cursor: unset;
 }
 
+a.button.primary, button.primary {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: 2px solid transparent;
+  padding: .75rem 1.875rem;
+  border-radius: 1.875rem;
+}
+
+a.button.primary:hover, button.primary:hover,
+a.button.primary:focus, button.primary:focus {
+  background-color: var(--primary-hover);
+}
+
 a.button.secondary, button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
-  color: var(--text-color)
+  color: var(--text-color);
+  padding: .75rem 1.875rem;
+  border-radius: 1.875rem;
+}
+
+a.button.secondary:hover, button.secondary:hover,
+a.button.secondary:focus, button.secondary:focus {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 main img {
