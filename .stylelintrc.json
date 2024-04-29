@@ -2,7 +2,7 @@
   "extends": ["stylelint-config-standard"],
   "overrides": [
     {
-      "files": ["blocks/**/*.css"],
+      "files": ["*.css"],
       "rules": {
         "no-descending-specificity": null
       }
