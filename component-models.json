@@ -146,12 +146,12 @@
         "value": "",
         "options": [
           {
-            "name": "Numbered Column",
-            "value": "numbered-column"
+            "name": "2/3 Column",
+            "value": "two-thirds-column"
           },
           {
-            "name": "Class 2",
-            "value": "class-2"
+            "name": "Logo Grid",
+            "value": "logo-grid"
           }
         ]
       },
