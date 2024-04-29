@@ -59,12 +59,12 @@
 
 @media (width >= 1024px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-font-size-xxl: 4rem;
+    --heading-font-size-xl: 3.625rem;
+    --heading-font-size-l: 3rem;
+    --heading-font-size-m: 2rem;
+    --heading-font-size-s: 1.5rem;
+    --heading-font-size-xs: 1.25rem;
   }
 }
 
@@ -107,9 +107,8 @@ h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
-  line-height: 1.25;
-  margin-top: 1em;
-  margin-bottom: .5em;
+  line-height: 1.125;
+  margin: 1.5rem 0;
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
@@ -180,7 +179,7 @@ a:hover {
 a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-flex;
-  gap: .5rem;
+  gap: .25rem;
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
@@ -199,6 +198,16 @@ a.button:hover, a.button:focus, button:hover, button:focus  {
   cursor: pointer;
 }
 
+a.button .icon img, a.button .icon img,
+button .icon img, button .icon img {
+  transition: 200ms;
+}
+
+a.button:hover .icon img, a.button:focus .icon img,
+button:hover .icon img, button:focus .icon img {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(74%) saturate(4914%) hue-rotate(334deg) brightness(84%) contrast(95%);
+}
+
 button:disabled, button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
@@ -210,6 +219,11 @@ a.button.primary, button.primary {
   border: 2px solid transparent;
   padding: .75rem 1.875rem;
   border-radius: 1.875rem;
+}
+
+a.button.primary .icon img,
+button.primary .icon img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(335deg) brightness(102%) contrast(101%);
 }
 
 a.button.primary:hover, button.primary:hover,
