@@ -30,7 +30,7 @@
       {
         "component": "multiselect",
         "valueType": "string",
-        "name": "classes",
+        "name": "type",
         "label": "Classes",
         "value": "",
         "options": [
