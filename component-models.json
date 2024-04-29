@@ -120,19 +120,19 @@
         "valueType": "string",
         "options": [
           {
-            "name": "default",
+            "name": "Default",
             "value": ""
           },
           {
-            "name": "primary",
+            "name": "Primary",
             "value": "primary"
           },
           {
-            "name": "secondary",
+            "name": "Secondary",
             "value": "secondary"
           },
           {
-            "name": "text-and-icon",
+            "name": "Text and Icon",
             "value": "text-and-icon"
           }
         ]
@@ -389,19 +389,19 @@
         "valueType": "string",
         "options": [
           {
-            "name": "default",
+            "name": "Default",
             "value": ""
           },
           {
-            "name": "primary",
+            "name": "Primary",
             "value": "primary"
           },
           {
-            "name": "secondary",
+            "name": "Secondary",
             "value": "secondary"
           },
           {
-            "name": "text-and-icon",
+            "name": "Text and Icon",
             "value": "text-and-icon"
           }
         ]
@@ -499,19 +499,19 @@
         "valueType": "string",
         "options": [
           {
-            "name": "default",
+            "name": "Default",
             "value": ""
           },
           {
-            "name": "primary",
+            "name": "Primary",
             "value": "primary"
           },
           {
-            "name": "secondary",
+            "name": "Secondary",
             "value": "secondary"
           },
           {
-            "name": "text-and-icon",
+            "name": "Text and Icon",
             "value": "text-and-icon"
           }
         ]
