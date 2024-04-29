@@ -175,16 +175,35 @@
         "value": "",
         "options": [
           {
-            "name": "1/3 Column",
-            "value": "one-thirds-column"
+            "name": "Two-Column Layout Options",
+            "children": [
+              {
+                "name": "1/3 Column",
+                "value": "one-thirds-column"
+              },
+              {
+                "name": "2/3 Column",
+                "value": "two-thirds-column"
+              }
+            ]
           },
           {
-            "name": "2/3 Column",
-            "value": "two-thirds-column"
+            "name": "Themes",
+            "children": [
+              {
+                "name": "Light Text",
+                "value": "light-text"
+              }
+            ]
           },
           {
-            "name": "Logo Grid",
-            "value": "logo-grid"
+            "name": "Unique Layouts",
+            "children": [
+              {
+                "name": "Logo Grid",
+                "value": "logo-grid"
+              }
+            ]
           }
         ]
       },
@@ -317,63 +336,9 @@
     "id": "hero",
     "fields": [
       {
-        "component": "multiselect",
-        "valueType": "string",
-        "name": "classes",
-        "label": "Classes",
-        "value": "",
-        "options": [
-          {
-            "name": "Homepage Hero",
-            "value": "hero-homepage"
-          },
-          {
-            "name": "Interior Hero Alt",
-            "value": "hero-interior"
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Background Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt Text",
-        "value": ""
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image2",
-        "label": "Secondary Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "image2Alt",
-        "label": "Secondary Alt Text",
-        "value": ""
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image3",
-        "label": "Secondary Mobile Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "image3Alt",
-        "label": "Secondary Mobile Alt Text",
-        "value": ""
+        "component": "tab",
+        "label": "Content",
+        "name": "tab1"
       },
       {
         "component": "richtext",
@@ -428,6 +393,75 @@
           {
             "name": "Secondary",
             "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Images",
+        "name": "tab2"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image2",
+        "label": "Secondary Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "image2Alt",
+        "label": "Secondary Alt Text",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image3",
+        "label": "Secondary Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "image3Alt",
+        "label": "Secondary Mobile Alt Text",
+        "value": ""
+      },
+      {
+        "component": "tab",
+        "label": "Styles",
+        "name": "tab3"
+      },
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Homepage Hero",
+            "value": "hero-homepage"
+          },
+          {
+            "name": "Interior Hero Alt",
+            "value": "hero-interior"
           }
         ]
       }
