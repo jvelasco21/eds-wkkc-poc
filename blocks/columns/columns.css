@@ -19,11 +19,15 @@
   display: block;
 }
 
+.primary-bg-section .columns > div > .columns-img-col img {
+  padding: 0 3rem;
+}
+
 @media (width >= 1024px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    gap: 2rem;
   }
 
   .columns > div > div {
@@ -63,6 +67,10 @@
 
   .columns.two-thirds-column > div > div:last-child {
     flex-basis: 33.3333%;
+  }
+
+  .primary-bg-section .columns > div {
+    gap: 5rem;
   }
 
   .columns.logo-grid > div {
