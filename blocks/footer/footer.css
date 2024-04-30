@@ -12,3 +12,18 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "brand brand"
+    "connect nav"
+    "links links"; 
+}
+.brand { grid-area: brand; }
+.connect { grid-area: connect; }
+.nav { grid-area: nav; }
+.links { grid-area: links; }
