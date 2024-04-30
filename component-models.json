@@ -322,6 +322,10 @@
             "value": "header-section"
           },
           {
+            "name": "Footer Section",
+            "value": "footer-section"
+          },
+          {
             "name": "Primary Background",
             "value": "primary-bg-section"
           }

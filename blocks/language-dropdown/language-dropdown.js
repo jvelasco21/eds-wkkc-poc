@@ -2,17 +2,17 @@ export default function decorate(block) {
   let buttonColumn = '';
   let iconString = '';
 
-  console.log(block);
-
   if (block.closest('.header-section')) {
     buttonColumn = block.closest('.header-section').querySelector('.numbered-column-3');
     iconString = '.icon-chevron';
   }
 
-  if (block.closest('.footer')) {
-    buttonColumn = block.closest('.footer').querySelector('.columns-1-cols');
+  if (block.closest('.footer-section')) {
+    buttonColumn = block.closest('.footer-section').querySelector('.columns-1-cols');
     iconString = '.icon-nav-arrow-light';
   }
+
+  console.log("buttonColumn", buttonColumn);
 
   const languageWrapper = block.closest('.language-dropdown-wrapper');
   const langaugeButtonColumn = buttonColumn;
