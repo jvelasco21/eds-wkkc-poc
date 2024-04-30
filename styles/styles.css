@@ -179,6 +179,7 @@ a:hover {
 a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-flex;
+  align-items: center;
   gap: .25rem;
   box-sizing: border-box;
   text-decoration: none;
@@ -196,6 +197,11 @@ a.button:any-link, button {
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
   cursor: pointer;
+}
+
+button .icon, a.button .icon {
+  height: 1.0625rem;
+  width: 0.9375rem;
 }
 
 button .icon img, a.button .icon img {
@@ -252,8 +258,8 @@ main img {
 
 .icon {
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
 }
 
 .icon img {
