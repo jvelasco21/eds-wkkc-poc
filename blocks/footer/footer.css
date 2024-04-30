@@ -307,7 +307,7 @@ footer .section > div:nth-child(3) .button-container .icon-forward {
   }
 
   footer .columns p.button-container {
-    padding-bottom: .5rem;
+    padding: 0 0 .5rem;
   }
 
   footer .columns ul li a,

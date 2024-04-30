@@ -40,6 +40,26 @@
   position: relative;
 }
 
+.columns.col-white-bg {
+  background-color: var(--white);
+}
+
+.pre-footer-section .columns.col-white-bg {
+  max-width: 64.75rem;
+  margin: 0 auto;
+  padding: 3.125rem 3rem 2.125rem;
+  border-radius: 1.3125rem;
+}
+
+.pre-footer-section .columns.col-white-bg h3,
+.pre-footer-section .columns.col-white-bg p {
+  margin-top: 0;
+}
+
+.pre-footer-section .columns.col-white-bg > div {
+  align-items: flex-start;
+}
+
 .columns.light-text {
   color: var(--white);
 }

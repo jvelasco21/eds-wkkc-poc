@@ -63,9 +63,9 @@
   :root {
     --heading-font-size-xxl: 4rem;
     --heading-font-size-xl: 3.625rem;
-    --heading-font-size-l: 3rem;
-    --heading-font-size-m: 2rem;
-    --heading-font-size-s: 1.5rem;
+    --heading-font-size-l: 2rem;
+    --heading-font-size-m: 1.5rem;
+    --heading-font-size-s: 1.25rem;
     --heading-font-size-xs: 1rem;
   }
 }
@@ -111,6 +111,7 @@ h4, h5, h6 {
   font-weight: 600;
   line-height: 1.125;
   margin: 1.5rem 0;
+  letter-spacing: -0.0002rem;
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
@@ -131,6 +132,7 @@ h2 {
 
 h3 {
   font-size: var(--heading-font-size-l);
+  color: var(--primary-color); 
 }
 
 h4 {
@@ -146,7 +148,6 @@ h6 {
   color: var(--dark-medium-grey);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: -0.0001rem;
 }
 
 p, dl, ol, ul, pre, blockquote {
@@ -310,6 +311,12 @@ main .section.no-padding {
   padding: 0;
 }
 
+main .section.pre-footer-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4.125rem 1rem;
+}
+
 main .section.primary-bg-section > div {
   background-color: var(--primary-color);
   padding: 3rem 1.4375rem;
@@ -324,5 +331,9 @@ main .section.tertiary-bg-section > div {
   main .section.primary-bg-section > div,
   main .section.tertiary-bg-section > div {
     padding: 3.875rem 5.375rem;
+  }
+
+  main .section.pre-footer-section {
+    padding: 5rem 1rem;
   }
 }
