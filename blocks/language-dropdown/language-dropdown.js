@@ -2,13 +2,15 @@ export default function decorate(block) {
   let buttonColumn = '';
   let iconString = '';
 
+  console.log(block);
+
   if (block.closest('.header-section')) {
     buttonColumn = block.closest('.header-section').querySelector('.numbered-column-3');
     iconString = '.icon-chevron';
   }
 
-  if (block.closest('.footer-bottom')) {
-    buttonColumn = block.closest('.footer-bottom').querySelector('.button-container');
+  if (block.closest('.footer')) {
+    buttonColumn = block.closest('.footer').querySelector('.columns-1-cols');
     iconString = '.icon-nav-arrow-light';
   }
 
