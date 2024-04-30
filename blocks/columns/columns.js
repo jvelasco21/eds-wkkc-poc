@@ -19,6 +19,15 @@ export default function decorate(block) {
         col.classList.add('numbered-column');
         col.classList.add(`numbered-column-${i + 1}`);
       }
+
+      if (col.closest('.footer-section') && col.querySelector('ul .button')) {
+        const footerMenuBtn = col.querySelector('.button');
+
+        footerMenuBtn.addEventListener('click', (e) => {
+          footerMenuBtn.closest('li').classList.toggle('active');
+          e.preventDefault();
+        });
+      }
     });
   });
 }

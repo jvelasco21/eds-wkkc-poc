@@ -9,17 +9,18 @@ footer .footer {
 
 .footer .section {
   display: grid;
-  gap: 0 0; 
+  gap: 1.5rem 0; 
   grid-template: 
-    "brand brand" auto
-    "connect nav" auto
-    "links links" auto
-    / 25% 75%; 
+    "nav" auto
+    "brand" auto
+    "connect" auto
+    "links" auto;
 }
 
 .footer .section > div:nth-child(1) {
   grid-area: brand;
   width: 100%;
+  text-align: center;
 }
 
 .footer .section > div:nth-child(2) {
@@ -56,6 +57,10 @@ footer .columns > div {
   align-items: flex-start;
 }
 
+footer .columns > div > div {
+  width: 100%;
+}
+
 .footer h6 {
   margin: 0 0 1.5rem;
 }
@@ -70,22 +75,55 @@ footer .columns {
   position: relative;
 }
 
+footer .columns.columns-5-cols {
+  padding: 0 2.1875rem 1.6875rem 1.875rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .columns.columns-5-cols::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  left: -1.25rem;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+
 footer .columns p.button-container {
   margin: 0;
-  padding-bottom: .5rem;
+  padding: .5rem 0;
 }
 
-footer .columns p.button-container + p.button-container {
-  padding-top: 1rem;
-}
-
-footer .columns ul li {
+footer .columns ul li li {
   padding-bottom: .375rem;
   line-height: 1.5625rem;
 }
 
-footer .columns ul li a {
+footer .columns ul li a,
+footer .columns ul li a.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .columns ul ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: .35s ease;
+  display: none;
+}
+
+footer .columns ul li.active ul {
+  max-height: 50rem;
   display: block;
+}
+
+.footer .section > div:nth-child(2) .columns > div {
+  align-items: center;
+}
+
+.footer .section > div:nth-child(2) .columns > div > div {
+  width: auto;
 }
 
 .footer .section > div:nth-child(2) ul {
@@ -174,21 +212,35 @@ footer .columns ul li a {
   filter: none;
 }
 
+footer .section > div:nth-child(3) .button-container .icon-forward {
+  display: none;
+}
+
 .footer .section > div:nth-child(4) ul {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
+.footer .section > div:nth-child(4) ul:nth-child(2) {
+  flex-direction: column;
+}
+
+.footer .section > div:nth-child(4) ul:nth-child(2) li::before {
+  display: none;
+}
+
 .footer .section > div:nth-child(4) ul li {
   position: relative;
+  padding: 0 .75rem;
 }
 
 .footer .section > div:nth-child(4) ul li::before {
   content: "|";
   position: absolute;
-  left: -0.625rem;
+  left: 0;
+  font-weight: 300;
 }
 
 .footer .section > div:nth-child(4) ul li:first-child::before {
@@ -215,5 +267,56 @@ footer .columns ul li a {
       "connect nav" auto
       "links links" auto
       / 25% 75%; 
+  }
+
+  .footer .section > div:nth-child(1) {
+    text-align: left;
+  }
+
+  .footer .section > div:nth-child(2) .columns > div {
+    align-items: flex-start;
+  }
+
+  .footer .section > div:nth-child(3) .button-container .icon-forward {
+    display: flex;
+  }
+
+  .footer .section > div:nth-child(3) .button-container .icon-chevron {
+    display: none;
+  }
+
+  .footer .section > div:nth-child(4) ul:nth-child(2) {
+    flex-direction: row;
+  }
+  
+  .footer .section > div:nth-child(4) ul:nth-child(2) li::before {
+    display: block;
+  }
+
+  footer .columns.columns-5-cols {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  footer .columns.columns-5-cols::after {
+    display: none;;
+  }
+
+  .footer .columns p.button-container + p.button-container {
+    padding-top: 1rem;
+  }
+
+  footer .columns p.button-container {
+    padding-bottom: .5rem;
+  }
+
+  footer .columns ul li a,
+  footer .columns ul li a.button {
+    justify-content: flex-start;
+  }
+
+  footer .columns ul ul {
+    max-height: 50rem;
+    display: block;
   }
 }
