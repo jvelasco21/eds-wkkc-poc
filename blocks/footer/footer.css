@@ -56,7 +56,7 @@ footer .columns > div {
   margin: 0 0 1.5rem;
 }
 
-footer .columns ul {
+footer ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -74,6 +74,10 @@ footer .columns p.button-container + p.button-container {
 footer .columns ul li {
   padding-bottom: .375rem;
   line-height: 1.5625rem;
+}
+
+footer .columns ul li a {
+  display: block;
 }
 
 .footer .section > div:nth-child(2) ul {
@@ -104,6 +108,42 @@ footer .columns ul li {
 
 .footer .section > div:nth-child(2) a:hover img {
   filter: brightness(0) saturate(100%) invert(15%) sepia(37%) saturate(7234%) hue-rotate(331deg) brightness(84%) contrast(101%);
+}
+
+.footer .section > div:nth-child(4) {
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.625rem;
+  color: var(--dark-grey);
+}
+
+.footer .section > div:nth-child(4) ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer .section > div:nth-child(4) ul li {
+  position: relative;
+}
+
+.footer .section > div:nth-child(4) ul li::before {
+  content: "|";
+  position: absolute;
+  left: -0.625rem;
+}
+
+.footer .section > div:nth-child(4) ul li:first-child::before {
+  display: none;
+}
+
+.footer .section > div:nth-child(4) a {
+  color: var(--dark-grey);
+}
+
+.footer .section > div:nth-child(4) a:hover {
+  color: var(--primary-hover);
 }
 
 @media (width >= 1024px) {
