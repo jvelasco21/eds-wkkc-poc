@@ -15,6 +15,7 @@
   --primary-color: #c91245;
   --primary-hover: #a10e37;
   --secondar-color: #000;
+  --tertiary-color: #003da5;
   --black: #000;
   --white: #fff;
   --dark-grey: #333;
@@ -111,6 +112,11 @@ h4, h5, h6 {
   line-height: 1.125;
   margin: 1.5rem 0;
   scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h1 em, h2 em, h3 em,
+h4 em, h5 em, h6 em {
+  font-family: var(--script-font-family);
 }
 
 h1 { 
@@ -306,5 +312,11 @@ main .section.primary-bg-section {
 
 main .section.primary-bg-section > div {
   background-color: var(--primary-color);
-  padding: 3.875rem 5.375rem;
+  padding: 3rem 1.4375rem;
+}
+
+@media (width >= 1024px) {
+  main .section.primary-bg-section > div {
+    padding: 3.875rem 5.375rem;
+  }
 }

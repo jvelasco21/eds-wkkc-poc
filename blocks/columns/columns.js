@@ -20,6 +20,7 @@ export default function decorate(block) {
         col.classList.add(`numbered-column-${i + 1}`);
       }
 
+      // footer column nav toggle
       if (col.closest('.footer-section') && col.querySelector('ul .button')) {
         const footerMenuBtn = col.querySelector('.button');
 

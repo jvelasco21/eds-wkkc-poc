@@ -188,7 +188,7 @@
             ]
           },
           {
-            "name": "Themes",
+            "name": "Options",
             "children": [
               {
                 "name": "Light Text",
@@ -197,6 +197,10 @@
               {
                 "name": "Large Text",
                 "value": "large-text"
+              },
+              {
+                "name": "Reverse Order - Mobile",
+                "value": "reverse-order"
               }
             ]
           },
@@ -314,20 +318,43 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "Themes",
+            "children": [
+              {
+                "name": "Primary Color Background",
+                "value": "primary-bg-section"
+              },
+              {
+                "name": "Secondary Color Background",
+                "value": "secondary-bg-section"
+              },
+              {
+                "name": "Tertiary Color Background",
+                "value": "tertiary-bg-section"
+              }
+            ]
           },
           {
-            "name": "Header Section",
-            "value": "header-section"
+            "name": "Options",
+            "children": [
+              {
+                "name": "No Padding",
+                "value": "no-padding"
+              }
+            ]
           },
           {
-            "name": "Footer Section",
-            "value": "footer-section"
-          },
-          {
-            "name": "Primary Background",
-            "value": "primary-bg-section"
+            "name": "Unique Layouts",
+            "children": [
+              {
+                "name": "Header Section",
+                "value": "header-section"
+              },
+              {
+                "name": "Footer Section",
+                "value": "footer-section"
+              }
+            ]
           }
         ]
       },

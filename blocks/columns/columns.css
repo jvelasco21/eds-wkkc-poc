@@ -21,6 +21,8 @@
 
 .primary-bg-section .columns > div > .columns-img-col img {
   padding: 0 3rem;
+  margin: 0 auto;
+  max-width: 300px;
 }
 
 @media (width >= 1024px) {
@@ -44,12 +46,46 @@
   color: var(--white);
 }
 
+.columns.light-text h1,
+.columns.light-text h2,
+.columns.light-text h3,
+.columns.light-text h4,
+.columns.light-text h5,
+.columns.light-text h6 {
+  color: var(--white);
+}
+
 .columns.large-text p {
-  font-size: 2rem;
-  line-height: 2.6875rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 300;
   letter-spacing: -0.0001rem;
   margin: 2rem 0;
+}
+
+.columns.logo-grid > div > div:first-child {
+  grid-gap: .625rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  order: 2;
+  max-width: 30rem;
+}
+
+.columns.logo-grid > div > div:first-child p {
+  margin: 0;
+  padding: .625rem;
+  position: relative;
+  text-align: center;
+}
+
+.columns.logo-grid img {
+  width: 85%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .columns.logo-grid .icon img {
@@ -74,6 +110,11 @@
     flex-basis: 33.3333%;
   }
 
+  .columns.large-text p {
+    font-size: 2rem;
+    line-height: 2.6875rem;
+  }
+
   .primary-bg-section .columns > div {
     gap: 5rem;
   }
@@ -84,23 +125,11 @@
 
   .columns.logo-grid > div > div:first-child {
     grid-gap: .625rem;
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 0 auto;
     padding: 0 5.3125rem;
-  }
-
-  .columns.logo-grid > div > div:first-child p {
-    margin: 0;
-    padding: .625rem;
-    position: relative;
-  }
-
-  .columns.logo-grid img {
-    width: 85%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    order: 0;
+    max-width: none;
   }
 }
