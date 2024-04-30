@@ -63,9 +63,9 @@
   :root {
     --heading-font-size-xxl: 4rem;
     --heading-font-size-xl: 3.625rem;
-    --heading-font-size-l: 2rem;
-    --heading-font-size-m: 1.5rem;
-    --heading-font-size-s: 1.25rem;
+    --heading-font-size-l: 3rem;
+    --heading-font-size-m: 2rem;
+    --heading-font-size-s: 1.5rem;
     --heading-font-size-xs: 1rem;
   }
 }
@@ -109,10 +109,11 @@ h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
-  line-height: 1.125;
+  line-height: 1.25;
   margin: 1.5rem 0;
   letter-spacing: -0.0002rem;
   scroll-margin: calc(var(--nav-height) + 1em);
+  color: var(--primary-color); 
 }
 
 h1 em, h2 em, h3 em,
@@ -122,17 +123,14 @@ h4 em, h5 em, h6 em {
 
 h1 { 
   font-size: var(--heading-font-size-xxl);
-  color: var(--primary-color); 
 }
 
 h2 { 
   font-size: var(--heading-font-size-xl);
-  color: var(--primary-color); 
 }
 
 h3 {
   font-size: var(--heading-font-size-l);
-  color: var(--primary-color); 
 }
 
 h4 {

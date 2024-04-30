@@ -57,7 +57,7 @@ footer .columns > div {
   align-items: flex-start;
 }
 
-footer .columns > div > div {
+footer .columns > div > div:not(.language-dropdown) {
   width: 100%;
 }
 
@@ -122,7 +122,7 @@ footer .columns ul li.active ul {
   align-items: center;
 }
 
-.footer .section > div:nth-child(2) .columns > div > div {
+.footer .section > div:nth-child(2) .columns > div > div:not(.language-dropdown) {
   width: auto;
 }
 
