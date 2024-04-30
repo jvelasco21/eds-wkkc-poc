@@ -353,6 +353,10 @@
               {
                 "name": "Footer Section",
                 "value": "footer-section"
+              },
+              {
+                "name": "Pre-footer Section",
+                "value": "pre-footer-section"
               }
             ]
           }
