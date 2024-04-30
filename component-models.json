@@ -201,6 +201,10 @@
               {
                 "name": "Reverse Order - Mobile",
                 "value": "reverse-order"
+              },
+              {
+                "name": "White Background",
+                "value": "col-white-bg"
               }
             ]
           },
