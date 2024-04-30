@@ -1,6 +1,6 @@
 export default function decorate(block) {
   let buttonColumn = '';
-  let iconString = '.icon-chevron';
+  const iconString = '.icon-chevron';
 
   if (block.closest('.header-section')) {
     buttonColumn = block.closest('.header-section').querySelector('.numbered-column-3');
@@ -27,8 +27,6 @@ export default function decorate(block) {
     animateDropdown();
     e.preventDefault();
   });
-
-  console.log(buttonArrow);
 
   languageItems.forEach((item) => {
     item.addEventListener('click', (e) => {

@@ -37,6 +37,10 @@ footer .footer {
   grid-area: links;
   width: 100%;
   text-align: center;
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.625rem;
+  color: var(--dark-grey);
 }
 
 footer .default-content-wrapper img {
@@ -168,13 +172,6 @@ footer .columns ul li a {
 .footer .section > div:nth-child(2) .button:hover img,
 .footer .section > div:nth-child(2) .button:focus img {
   filter: none;
-}
-
-.footer .section > div:nth-child(4) {
-  font-weight: 500;
-  font-size: .875rem;
-  line-height: 1.625rem;
-  color: var(--dark-grey);
 }
 
 .footer .section > div:nth-child(4) ul {
