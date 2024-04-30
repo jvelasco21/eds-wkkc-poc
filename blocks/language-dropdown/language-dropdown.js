@@ -1,18 +1,14 @@
 export default function decorate(block) {
   let buttonColumn = '';
-  let iconString = '';
+  let iconString = '.icon-chevron';
 
   if (block.closest('.header-section')) {
     buttonColumn = block.closest('.header-section').querySelector('.numbered-column-3');
-    iconString = '.icon-chevron';
   }
 
   if (block.closest('.footer-section')) {
     buttonColumn = block.closest('.footer-section').querySelector('.columns-1-cols');
-    iconString = '.icon-nav-arrow-light';
   }
-
-  console.log("buttonColumn", buttonColumn);
 
   const languageWrapper = block.closest('.language-dropdown-wrapper');
   const langaugeButtonColumn = buttonColumn;
@@ -31,6 +27,8 @@ export default function decorate(block) {
     animateDropdown();
     e.preventDefault();
   });
+
+  console.log(buttonArrow);
 
   languageItems.forEach((item) => {
     item.addEventListener('click', (e) => {

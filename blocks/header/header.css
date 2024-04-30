@@ -409,6 +409,11 @@ header nav .nav-tools .numbered-column-3 .button:hover {
   box-shadow: 0 4px 10px 0 rgba(0 0 0 / 15%);
 }
 
+header nav .nav-tools .numbered-column-3 .button:hover img,
+header nav .nav-tools .numbered-column-3 .button:focus img {
+  filter: none;
+}
+
 header nav .nav-tools .numbered-column-3 .icon {
   position: absolute;
   height: .9375rem;

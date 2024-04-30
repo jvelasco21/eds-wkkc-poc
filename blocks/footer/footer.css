@@ -62,6 +62,10 @@ footer ul {
   list-style: none;
 }
 
+footer .columns {
+  position: relative;
+}
+
 footer .columns p.button-container {
   margin: 0;
   padding-bottom: .5rem;
@@ -92,6 +96,14 @@ footer .columns ul li a {
   line-height: normal;
 }
 
+.footer .section > div:nth-child(2) .language-dropdown ul {
+  gap: 0;
+}
+
+.footer .section > div:nth-child(2) .language-dropdown ul li {
+  width: 100%;
+}
+
 .footer .section > div:nth-child(2) ul li a {
   display: block;
 }
@@ -108,6 +120,54 @@ footer .columns ul li a {
 
 .footer .section > div:nth-child(2) a:hover img {
   filter: brightness(0) saturate(100%) invert(15%) sepia(37%) saturate(7234%) hue-rotate(331deg) brightness(84%) contrast(101%);
+}
+
+.footer .section > div:nth-child(2) .button-container {
+  padding: 2rem 0 0;
+}
+
+.footer .section > div:nth-child(2) .button {
+  height: 48px;
+  width: 164px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.0009rem;
+  border-radius: 1.25rem;
+  background-color: #f4f4f4;
+  position: relative;
+  justify-content: space-between;
+}
+
+.footer .section > div:nth-child(2) .button:hover,
+.footer .section > div:nth-child(2) .button:focus {
+  color: var(--black);
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 15%);
+}
+
+.footer .section > div:nth-child(2) .button .icon {
+  position: absolute;
+  height: .9375rem;
+  width: .9375rem;
+  right: .9375rem;
+  transition: .15s;
+  transform: rotate(0);
+}
+
+.footer .section > div:nth-child(2) .active .icon {
+  transform: rotate(180deg);
+}
+
+.footer .section > div:nth-child(2) .button img {
+  filter: none;
+  display: block;
+}
+
+.footer .section > div:nth-child(2) .button:hover img,
+.footer .section > div:nth-child(2) .button:focus img {
+  filter: none;
 }
 
 .footer .section > div:nth-child(4) {
