@@ -306,7 +306,7 @@ main .section.has-background-image {
   background-position: center;
 }
 
-main .section.primary-bg-section {
+main .section.no-padding {
   padding: 0;
 }
 
@@ -315,8 +315,14 @@ main .section.primary-bg-section > div {
   padding: 3rem 1.4375rem;
 }
 
+main .section.tertiary-bg-section > div {
+  background-color: var(--tertiary-color);
+  padding: 3rem 1.4375rem;
+}
+
 @media (width >= 1024px) {
-  main .section.primary-bg-section > div {
+  main .section.primary-bg-section > div,
+  main .section.tertiary-bg-section > div {
     padding: 3.875rem 5.375rem;
   }
 }

@@ -21,8 +21,6 @@
 
 .primary-bg-section .columns > div > .columns-img-col img {
   padding: 0 3rem;
-  margin: 0 auto;
-  max-width: 300px;
 }
 
 @media (width >= 1024px) {
@@ -53,6 +51,27 @@
 .columns.light-text h5,
 .columns.light-text h6 {
   color: var(--white);
+}
+
+.columns.light-text .button.default,
+.columns.light-text a {
+  color: var(--white);
+}
+
+.columns.light-text .button.default:hover,
+.columns.light-text .button.default:focus,
+.columns.light-text a:hover,
+.columns.light-text a:focus {
+  color: var(--light-grey);
+}
+
+.columns.light-text .button.default .icon img {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(1839%) hue-rotate(309deg) brightness(102%) contrast(104%);
+}
+
+.columns.light-text .button.default:hover .icon img,
+.columns.light-text .button.default:focus .icon img {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(0%) saturate(1%) hue-rotate(153deg) brightness(90%) contrast(85%);
 }
 
 .columns.large-text p {
@@ -115,7 +134,9 @@
     line-height: 2.6875rem;
   }
 
-  .primary-bg-section .columns > div {
+  .primary-bg-section .columns > div,
+  .secondary-bg-section .columns > div,
+  .tertiary-bg-section .columns > div {
     gap: 5rem;
   }
 
