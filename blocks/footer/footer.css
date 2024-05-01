@@ -257,7 +257,7 @@ footer .section > div:nth-child(3) .button-container .icon-forward {
 
 @media (width >= 1024px) {
   footer {
-    padding: 7.5rem 1.25rem 1.875rem;
+    padding: 5.5rem 1.25rem 1.875rem;
   }
 
   .footer .section {

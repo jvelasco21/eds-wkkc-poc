@@ -310,9 +310,38 @@ main .section.no-padding {
 }
 
 main .section.pre-footer-section {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 4.125rem 1rem;
+  position: relative;
+}
+
+main .section.pre-footer-section > .default-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+main .section.pre-footer-section > .default-content-wrapper p {
+  margin: 0;
+  height: 100%;
+}
+
+main .section.pre-footer-section > .default-content-wrapper picture {
+  display: block;
+  height: 100%;
+}
+
+main .section.pre-footer-section > .default-content-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+main .section.pre-footer-section > .columns-wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 main .section.primary-bg-section > div {
