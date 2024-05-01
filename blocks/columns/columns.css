@@ -108,7 +108,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0;
   order: 2;
   max-width: 30rem;
 }
