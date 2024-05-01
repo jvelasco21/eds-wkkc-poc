@@ -377,6 +377,7 @@
   },
   {
     "id": "hero",
+    "label": "Hero",
     "fields": [
       {
         "component": "tab",
