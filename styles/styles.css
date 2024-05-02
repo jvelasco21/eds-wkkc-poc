@@ -38,6 +38,8 @@
   --script-font-family: 'WK Kellogg Script', arial, helvetica, sans-serif;
   --heading-font-family: var(--body-font-family);
   --raisin-bran-font: 'Montserrat', sans-serif;
+  --froot-loops-body-font: 'Metropolis', sans-serif;
+  --froot-loops-heading-font: 'FrootLoops', sans-serif;
 
   /* body sizes */
   --body-font-size: 1rem;
@@ -59,13 +61,6 @@
   --nav-height-desktop: 104px;
 }
 
-/* Theme Specific */
-.theme-raisin-bran {
-  --primary-color: #B51A8A;
-  --primary-hover: #64154C;
-  --secondary-color: #FAE158;
-}
-
 @media (width >= 1024px) {
   :root {
     --heading-font-size-xxl: 4rem;
@@ -75,6 +70,18 @@
     --heading-font-size-s: 1.5rem;
     --heading-font-size-xs: 1rem;
   }
+}
+
+/* Theme Specific */
+.theme-raisin-bran {
+  --primary-color: #B51A8A;
+  --primary-hover: #64154C;
+  --secondary-color: #FAE158;
+}
+
+.theme-froot-loops {
+  --primary-color: #DC0031;
+  --primary-hover: #690517;
 }
 
 *, *::after, *::before {
@@ -95,6 +102,10 @@ body {
 /* Theme specific */
 body.theme-raisin-bran main {
   font-family: var(--raisin-bran-font);
+}
+
+body.theme-froot-loops main {
+  font-family: var(--froot-loops-body-font);
 }
 
 body.appear {
@@ -141,6 +152,17 @@ body.theme-raisin-bran main h6 {
   line-height: 1;
 }
 
+body.theme-froot-loops main h1,
+body.theme-froot-loops main h2,
+body.theme-froot-loops main h3,
+body.theme-froot-loops main h4,
+body.theme-froot-loops main h5,
+body.theme-froot-loops main h6 {
+  font-family: var(--froot-loops-heading-font);
+  color: var(--black); 
+  font-weight: bold;
+  line-height: 1;
+}
 
 h1 em, h2 em, h3 em,
 h4 em, h5 em, h6 em {
@@ -287,7 +309,7 @@ a.button.secondary:focus, button.secondary:focus {
   color: var(--primary-color);
 }
 
-/* Theme specific */
+/* Theme specific: Raisin Bran */
 .theme-raisin-bran a.button,
 .theme-raisin-bran button {
   font-family: var(--raisin-bran-font);
@@ -309,6 +331,29 @@ a.button.secondary:focus, button.secondary:focus {
 .theme-raisin-bran button.secondary:focus {
   background-color: var(--primary-color);
   color: var(--white)
+}
+
+/* Theme specific: Froot Loops */
+.theme-froot-loops a.button,
+.theme-froot-loops button {
+  font-family: var(--froot-loops-heading-font);
+}
+
+.theme-froot-loops a.button.secondary,
+.theme-froot-loops button.secondary {
+  background-color: var(--white);
+  padding: .75rem 2rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-froot-loops a.button.secondary:hover,
+.theme-froot-loops button.secondary:hover,
+.theme-froot-loops a.button.secondary:focus,
+.theme-froot-loops button.secondary:focus {
+  color: var(--primary-hover);
 }
 
 main img {

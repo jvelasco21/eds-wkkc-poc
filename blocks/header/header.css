@@ -548,3 +548,54 @@ header nav[aria-expanded="true"] .nav-tools .columns > div {
     min-height: 40rem;
   }
 }
+
+/* Theme: Froot Loops */
+.theme-froot-loops .hero-homepage h1 {
+  color: var(--white);
+  text-shadow: 0 0 0.1em rgba(0 0 0 / 50%), 0 0 1em rgba(75 45 37 / 50%);
+  margin: .5rem 0;
+  font-size: 3rem;
+}
+
+.theme-froot-loops .hero-homepage p {
+  color: var(--white);
+}
+
+.theme-froot-loops .hero .hero-background picture {
+  background: radial-gradient(ellipse farthest-corner at 50% -30%, #DC0031 0%, #DC0031 60%, #690517 120%);
+  display: flex;
+  justify-content: center;
+}
+
+.theme-froot-loops .hero .hero-background img {
+  object-fit: contain;
+  object-position: left bottom;
+  width: 80%;
+}
+
+.theme-froot-loops .hero-homepage .hero-foreground {
+  transform: none;
+  inset: auto 8rem 5rem auto;
+}
+
+.hero-homepage .hero-foreground .hero-foreground-item-2 img {
+  height: 240px;
+  object-fit: contain;
+}
+
+.theme-froot-loops .hero-homepage a.button {
+  margin-top: 1rem;
+  padding: .75rem 2rem;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+@media (width >= 1024px) {
+  .theme-froot-loops .hero-homepage {
+    min-height: 40rem;
+  }
+
+  .theme-froot-loops .hero-homepage .hero-foreground {
+    max-width: 30rem;
+  }
+}

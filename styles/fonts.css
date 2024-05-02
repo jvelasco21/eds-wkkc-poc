@@ -229,3 +229,51 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+	font-family: FrootLoops;
+	src: url('../fonts/FrootLoops/FrootLoops.woff2') format('woff2'), url('../fonts/FrootLoops/FrootLoops.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: FrootLoops;
+	src: url('../fonts/FrootLoops/FrootLoops.woff2') format('woff2'), url('../fonts/FrootLoops/FrootLoops.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: Metropolis;
+	src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'), url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: Metropolis;
+	src: url('../fonts/Metropolis/Metropolis-RegularItalic.woff2') format('woff2'), url('../fonts/Metropolis/Metropolis-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: Metropolis;
+	src: url('../fonts/Metropolis/Metropolis-ExtraBold.woff2') format('woff2'), url('../fonts/Metropolis/Metropolis-ExtraBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: Metropolis;
+	src: url('../fonts/Metropolis/Metropolis-ExtraBoldItalic.woff2') format('woff2'), url('../fonts/Metropolis/Metropolis-ExtraBoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+  font-display: swap;
+}
