@@ -277,9 +277,9 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta1",
+        "name": "href",
         "value": "",
-        "label": "Link"
+        "label": "Card Link"
       }
     ]
   },
