@@ -37,7 +37,7 @@
   --body-font-family: 'Work Sans', arial, helvetica, sans-serif;
   --script-font-family: 'WK Kellogg Script', arial, helvetica, sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --raisin-bran-font: 'Montserrat', sans-serif;
 
   /* body sizes */
   --body-font-size: 1rem;
@@ -57,6 +57,13 @@
   --nav-height: 82px;
   --nav-height-tablet: 95px;
   --nav-height-desktop: 104px;
+}
+
+/* Theme Specific */
+.theme-raisin-bran {
+  --primary-color: #B51A8A;
+  --primary-hover: #64154C;
+  --secondary-color: #FAE158;
 }
 
 @media (width >= 1024px) {
@@ -83,6 +90,11 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+}
+
+/* Theme specific */
+body.theme-raisin-bran main {
+  font-family: var(--raisin-bran-font);
 }
 
 body.appear {
@@ -115,6 +127,20 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
   color: var(--primary-color); 
 }
+
+/* Theme specific */
+body.theme-raisin-bran main h1,
+body.theme-raisin-bran main h2,
+body.theme-raisin-bran main h3,
+body.theme-raisin-bran main h4,
+body.theme-raisin-bran main h5,
+body.theme-raisin-bran main h6 {
+  font-family: var(--raisin-bran-font);
+  color: var(--primary-hover); 
+  font-weight: 800;
+  line-height: 1;
+}
+
 
 h1 em, h2 em, h3 em,
 h4 em, h5 em, h6 em {
@@ -259,6 +285,30 @@ a.button.secondary:hover, button.secondary:hover,
 a.button.secondary:focus, button.secondary:focus {
   border-color: var(--primary-color);
   color: var(--primary-color);
+}
+
+/* Theme specific */
+.theme-raisin-bran a.button,
+.theme-raisin-bran button {
+  font-family: var(--raisin-bran-font);
+}
+
+.theme-raisin-bran a.button.secondary,
+.theme-raisin-bran button.secondary {
+  background-color: var(--white);
+  padding: .75rem 2rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-raisin-bran a.button.secondary:hover,
+.theme-raisin-bran button.secondary:hover,
+.theme-raisin-bran a.button.secondary:focus,
+.theme-raisin-bran button.secondary:focus {
+  background-color: var(--primary-color);
+  color: var(--white)
 }
 
 main img {
