@@ -78,6 +78,7 @@ header nav .nav-hamburger button {
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
+  justify-content: flex-end;
 }
 
 header nav .nav-hamburger-icon,
