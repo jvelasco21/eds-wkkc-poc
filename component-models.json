@@ -236,6 +236,28 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Cards 3 style",
+            "value": "cards-class-1"
+          },
+          {
+            "name": "Cards 2 Style",
+            "value": "cards-class-2"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -251,6 +273,48 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Text",
+        "value": "",
+        "label": "Link Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Title",
+        "value": "",
+        "label": "Link Title"
+      },
+      {
+        "component": "select",
+        "name": "cta1Type",
+        "value": "",
+        "label": "Link Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
       }
     ]
   },
