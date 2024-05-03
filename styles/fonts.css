@@ -309,3 +309,19 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: KelloggSans;
+  src: url("../fonts/KelloggSans/KelloggsSans-Regular.otf") format('opentype'), url("../fonts/KelloggSans/KelloggsSans-Regular.woff") format('woff'), url("../fonts/KelloggSans/KelloggsSans-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: KelloggSans;
+  src: url("../fonts/KelloggSans/KelloggsSans-Bold.otf") format('opentype'), url("../fonts/KelloggSans/KelloggsSans-Bold.woff") format('woff'), url("../fonts/KelloggSans/KelloggsSans-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
