@@ -480,14 +480,14 @@
         "component": "reference",
         "valueType": "string",
         "name": "image3",
-        "label": "Secondary Mobile Image",
+        "label": "Tertiary/Mobile Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "image3Alt",
-        "label": "Secondary Mobile Alt Text",
+        "label": "Tertiary/Mobile Alt Text",
         "value": ""
       },
       {

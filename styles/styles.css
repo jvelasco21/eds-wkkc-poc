@@ -40,6 +40,7 @@
   --raisin-bran-font: 'Montserrat', sans-serif;
   --froot-loops-body-font: 'Metropolis', sans-serif;
   --froot-loops-heading-font: 'FrootLoops', sans-serif;
+  --honey-smacks-font: 'Source Sans 3', sans-serif;
 
   /* body sizes */
   --body-font-size: 1rem;
@@ -84,6 +85,13 @@
   --primary-hover: #690517;
 }
 
+.theme-honey-smacks {
+  --primary-color: #388532;
+  --primary-hover: #275e23;
+  --secondary-color: #E51225;
+  --tertiary-color: #EF561D;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -106,6 +114,10 @@ body.theme-raisin-bran main {
 
 body.theme-froot-loops main {
   font-family: var(--froot-loops-body-font);
+}
+
+body.theme-froot-loops main {
+  font-family: var(--honey-smacks-font);
 }
 
 body.appear {
@@ -159,6 +171,18 @@ body.theme-froot-loops main h4,
 body.theme-froot-loops main h5,
 body.theme-froot-loops main h6 {
   font-family: var(--froot-loops-heading-font);
+  color: var(--black); 
+  font-weight: bold;
+  line-height: 1;
+}
+
+body.theme-honey-smacks main h1,
+body.theme-honey-smacks main h2,
+body.theme-honey-smacks main h3,
+body.theme-honey-smacks main h4,
+body.theme-honey-smacks main h5,
+body.theme-honey-smacks main h6 {
+  font-family: var(--honey-smacks-font);
   color: var(--black); 
   font-weight: bold;
   line-height: 1;
@@ -310,13 +334,13 @@ a.button.secondary:focus, button.secondary:focus {
 }
 
 /* Theme specific: Raisin Bran */
-.theme-raisin-bran a.button,
-.theme-raisin-bran button {
+.theme-raisin-bran main a.button,
+.theme-raisin-bran main button {
   font-family: var(--raisin-bran-font);
 }
 
-.theme-raisin-bran a.button.secondary,
-.theme-raisin-bran button.secondary {
+.theme-raisin-bran main a.button.secondary,
+.theme-raisin-bran main button.secondary {
   background-color: var(--white);
   padding: .75rem 2rem;
   color: var(--primary-color);
@@ -325,22 +349,22 @@ a.button.secondary:focus, button.secondary:focus {
   box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
 }
 
-.theme-raisin-bran a.button.secondary:hover,
-.theme-raisin-bran button.secondary:hover,
-.theme-raisin-bran a.button.secondary:focus,
-.theme-raisin-bran button.secondary:focus {
+.theme-raisin-bran main a.button.secondary:hover,
+.theme-raisin-bran main button.secondary:hover,
+.theme-raisin-bran main a.button.secondary:focus,
+.theme-raisin-bran main button.secondary:focus {
   background-color: var(--primary-color);
   color: var(--white)
 }
 
 /* Theme specific: Froot Loops */
-.theme-froot-loops a.button,
-.theme-froot-loops button {
+.theme-froot-loops main a.button,
+.theme-froot-loops main button {
   font-family: var(--froot-loops-heading-font);
 }
 
-.theme-froot-loops a.button.secondary,
-.theme-froot-loops button.secondary {
+.theme-froot-loops main a.button.secondary,
+.theme-froot-loops main button.secondary {
   background-color: var(--white);
   padding: .75rem 2rem;
   color: var(--primary-color);
@@ -349,12 +373,36 @@ a.button.secondary:focus, button.secondary:focus {
   box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
 }
 
-.theme-froot-loops a.button.secondary:hover,
-.theme-froot-loops button.secondary:hover,
-.theme-froot-loops a.button.secondary:focus,
-.theme-froot-loops button.secondary:focus {
+.theme-froot-loops main a.button.secondary:hover,
+.theme-froot-loops main button.secondary:hover,
+.theme-froot-loops main a.button.secondary:focus,
+.theme-froot-loops main button.secondary:focus {
   color: var(--primary-hover);
 }
+
+/* Theme specific: Honey Smacks */
+.theme-honey-smacks main a.button,
+.theme-honey-smacks main button {
+  font-family: var(--honey-smacks-font);
+}
+
+.theme-honey-smacks main a.button.secondary,
+.theme-honey-smacks main button.secondary {
+  background-color: var(--white);
+  padding: .75rem 2rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-honey-smacks main a.button.secondary:hover,
+.theme-honey-smacks main button.secondary:hover,
+.theme-honey-smacks main a.button.secondary:focus,
+.theme-honey-smacks main button.secondary:focus {
+  color: var(--primary-hover)
+}
+
 
 main img {
   max-width: 100%;
