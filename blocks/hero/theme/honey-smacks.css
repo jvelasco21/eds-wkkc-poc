@@ -34,9 +34,9 @@
 
 .theme-honey-smacks .hero-homepage a.button {
   margin-top: 2rem;
-  padding: .75rem 2rem;
+  padding: .75rem 1.875rem;
   line-height: inherit;
-  font-size: inherit;
+  font-size: 1rem;
 }
 
 @media (width >= 1024px) {
@@ -44,7 +44,7 @@
     min-height: 40rem;
   }
 
-  .theme-honey-smacks .hero-homepage .hero-foreground-item-3 {
+  .theme-honey-smacks .hero-homepage .hero-foreground .hero-foreground-item-3 {
     display: block;
     max-width: 25rem;
   }

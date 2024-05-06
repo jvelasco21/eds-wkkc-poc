@@ -30,14 +30,22 @@ body.theme-honey-smacks main h6 {
   font-family: var(--honey-smacks-font);
 }
 
+.theme-honey-smacks main a.button.default,
+.theme-honey-smacks main button.default {
+  color: var(--primary-color);
+}
+
+.theme-honey-smacks main a.button.default:hover,
+.theme-honey-smacks main button.default:hover {
+  color: var(--primary-hover);
+}
+
 .theme-honey-smacks main a.button.secondary,
 .theme-honey-smacks main button.secondary {
   background-color: var(--white);
-  padding: .75rem 2rem;
   color: var(--primary-color);
-  font-size: 1rem;
-  font-weight: 800;
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+  border: 0;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0 0 0 / 15%);
 }
 
 .theme-honey-smacks main a.button.secondary:hover,

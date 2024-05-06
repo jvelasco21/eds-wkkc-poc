@@ -32,15 +32,17 @@ body.theme-apple-jacks main h6 {
 
 .theme-apple-jacks main a.button.secondary,
 .theme-apple-jacks main button.secondary {
+  background-color: var(--white);
   border: transparent;
   color: var(--primary-color);
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+  border: 0;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0 0 0 / 15%);
 }
 
 .theme-apple-jacks main a.button.secondary:hover,
 .theme-apple-jacks main button.secondary:hover,
 .theme-apple-jacks main a.button.secondary:focus,
 .theme-apple-jacks main button.secondary:focus {
-  background-color: var(--primary-hover);
-  color: var(--white)
+  background-color: var(--light-light-grey);
+  color: var(--primary-hover)
 }

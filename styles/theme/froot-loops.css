@@ -38,7 +38,7 @@ body.theme-froot-loops main h6 {
   background-color: var(--white);
   color: var(--primary-color);
   padding: .85rem 1.875rem .65rem;
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0 0 0 / 15%);
   border: 0;
 }
 

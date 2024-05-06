@@ -35,9 +35,9 @@
 
 .theme-corn-flakes .hero-homepage a.button {
   margin-top: 2rem;
-  padding: .75rem 2rem;
   line-height: inherit;
-  font-size: inherit;
+  font-size: 1rem;
+  padding: .75rem 1.875rem;
 }
 
 @media (width >= 1024px) {

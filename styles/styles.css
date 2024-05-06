@@ -29,6 +29,7 @@
   --dark-medium-grey: #666;
   --medium-grey: #999;
   --light-grey: #ccc;
+  --light-light-grey: #f0f0f0;
 
   /* color assignments */
   --link-color: var(--secondar-color);
