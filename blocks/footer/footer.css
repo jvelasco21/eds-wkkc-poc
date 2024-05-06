@@ -212,7 +212,7 @@ footer .columns ul li.active ul {
   filter: none;
 }
 
-footer .section > div:nth-child(3) .button-container .icon-forward {
+footer .section > div:nth-child(3) .icon-forward {
   display: none;
 }
 
@@ -277,11 +277,11 @@ footer .section > div:nth-child(3) .button-container .icon-forward {
     align-items: flex-start;
   }
 
-  .footer .section > div:nth-child(3) .button-container .icon-forward {
+  .footer .section > div:nth-child(3) .icon-forward {
     display: flex;
   }
 
-  .footer .section > div:nth-child(3) .button-container .icon-chevron {
+  .footer .section > div:nth-child(3) .icon-chevron {
     display: none;
   }
 
