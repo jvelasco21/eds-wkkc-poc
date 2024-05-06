@@ -1,0 +1,50 @@
+/* colors */
+.theme-froot-loops {
+  --primary-color: #DC0031;
+  --primary-hover: #690517;
+}
+
+/* body */
+body.theme-froot-loops main {
+  font-family: var(--froot-loops-body-font);
+}
+
+/* headings */
+body.theme-froot-loops main h1,
+body.theme-froot-loops main h2,
+body.theme-froot-loops main h3,
+body.theme-froot-loops main h4,
+body.theme-froot-loops main h5,
+body.theme-froot-loops main h6 {
+  font-family: var(--froot-loops-heading-font);
+  color: var(--black); 
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* buttons */
+.theme-froot-loops main a.button,
+.theme-froot-loops main button {
+  font-family: var(--froot-loops-heading-font);
+}
+
+.theme-froot-loops main a.button.primary,
+.theme-froot-loops main button.primary {
+  padding: .85rem 1.875rem .65rem;
+}
+
+.theme-froot-loops main a.button.secondary,
+.theme-froot-loops main button.secondary {
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: .85rem 1.875rem .65rem;
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+  border: 0;
+}
+
+.theme-froot-loops main a.button.secondary:hover,
+.theme-froot-loops main button.secondary:hover,
+.theme-froot-loops main a.button.secondary:focus,
+.theme-froot-loops main button.secondary:focus {
+  color: var(--primary-hover);
+}

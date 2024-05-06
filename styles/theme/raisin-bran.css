@@ -1,0 +1,70 @@
+/* colors */
+.theme-raisin-bran {
+  --primary-color: #B51A8A;
+  --primary-hover: #64154C;
+  --secondary-color: #FAE158;
+}
+
+/* body */
+body.theme-raisin-bran main {
+  font-family: var(--raisin-bran-font);
+}
+
+/* headings */
+body.theme-raisin-bran main h1,
+body.theme-raisin-bran main h2,
+body.theme-raisin-bran main h3,
+body.theme-raisin-bran main h4,
+body.theme-raisin-bran main h5,
+body.theme-raisin-bran main h6 {
+  font-family: var(--raisin-bran-font);
+  color: var(--primary-hover); 
+  font-weight: 800;
+  line-height: 1;
+}
+
+body.theme-raisin-bran main h1 em,
+body.theme-raisin-bran main h2 em,
+body.theme-raisin-bran main h3 em,
+body.theme-raisin-bran main h4 em,
+body.theme-raisin-bran main h5 em,
+body.theme-raisin-bran main h6 em {
+  font-family: var(--raisin-bran-font);
+}
+
+/* buttons */
+.theme-raisin-bran main a:any-link {
+  color: var(--primary-color);
+}
+
+.theme-raisin-bran main a:any-link:hover,
+.theme-raisin-bran main a:any-link:focus {
+  color: var(--primary-hover);
+}
+
+.theme-raisin-bran main a.button,
+.theme-raisin-bran main button {
+  font-family: var(--raisin-bran-font);
+  font-weight: 800;
+}
+
+.theme-raisin-bran main a.button.primary,
+.theme-raisin-bran main button.primary {
+  color: var(--white);
+}
+
+.theme-raisin-bran main a.button.secondary,
+.theme-raisin-bran main button.secondary {
+  background-color: var(--white);
+  border-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-raisin-bran main a.button.secondary:hover,
+.theme-raisin-bran main button.secondary:hover,
+.theme-raisin-bran main a.button.secondary:focus,
+.theme-raisin-bran main button.secondary:focus {
+  background-color: var(--primary-color);
+  color: var(--white)
+}

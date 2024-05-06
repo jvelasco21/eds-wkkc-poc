@@ -1,0 +1,48 @@
+/* colors */
+.theme-honey-smacks {
+  --primary-color: #388532;
+  --primary-hover: #275e23;
+  --secondary-color: #E51225;
+  --tertiary-color: #EF561D;
+}
+
+/* body */
+body.theme-honey-smacks main {
+  font-family: var(--honey-smacks-font);
+}
+
+/* headings */
+body.theme-honey-smacks main h1,
+body.theme-honey-smacks main h2,
+body.theme-honey-smacks main h3,
+body.theme-honey-smacks main h4,
+body.theme-honey-smacks main h5,
+body.theme-honey-smacks main h6 {
+  font-family: var(--honey-smacks-font);
+  color: var(--black); 
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* buttons */
+.theme-honey-smacks main a.button,
+.theme-honey-smacks main button {
+  font-family: var(--honey-smacks-font);
+}
+
+.theme-honey-smacks main a.button.secondary,
+.theme-honey-smacks main button.secondary {
+  background-color: var(--white);
+  padding: .75rem 2rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-honey-smacks main a.button.secondary:hover,
+.theme-honey-smacks main button.secondary:hover,
+.theme-honey-smacks main a.button.secondary:focus,
+.theme-honey-smacks main button.secondary:focus {
+  color: var(--primary-hover)
+}

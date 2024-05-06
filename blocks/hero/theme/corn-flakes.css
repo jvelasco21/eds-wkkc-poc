@@ -1,0 +1,51 @@
+/* hero */
+.theme-corn-flakes .hero-homepage h1 {
+  margin: 0 0 .5rem;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.theme-corn-flakes .hero .hero-background picture {
+  background: transparent radial-gradient(closest-side at 50% 50%, #EFEFEF 60%, #DDD 130%) 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 12rem;
+}
+
+.theme-corn-flakes .hero .hero-background img {
+  object-fit: contain;
+  object-position: center;
+  width: 350px;
+}
+
+.theme-corn-flakes .hero-homepage p {
+  font-size: 1.25rem;
+}
+
+.theme-corn-flakes .hero-homepage .hero-foreground {
+  inset: 50% 10rem auto auto;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+
+.theme-corn-flakes .hero-homepage .hero-foreground-item-6 {
+  margin-top: 1rem;
+}
+
+.theme-corn-flakes .hero-homepage a.button {
+  margin-top: 2rem;
+  padding: .75rem 2rem;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+@media (width >= 1024px) {
+  .theme-corn-flakes .hero-homepage {
+    min-height: 40rem;
+  }
+
+  .theme-corn-flakes .hero-homepage .hero-foreground {
+    max-width: 36rem;
+  }
+}

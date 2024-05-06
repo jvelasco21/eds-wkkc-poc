@@ -1,0 +1,46 @@
+/* colors */
+.theme-apple-jacks {
+  --primary-color: #E51121;
+  --primary-hover: #a0030f;
+  --secondary-color: #2aae26;
+  --secondary-hover: #1e751b;
+}
+
+/* body */
+.theme-apple-jacks main {
+  font-family: var(--apple-jacks-body-font);
+}
+
+/* headings */
+body.theme-apple-jacks main h1,
+body.theme-apple-jacks main h2,
+body.theme-apple-jacks main h3,
+body.theme-apple-jacks main h4,
+body.theme-apple-jacks main h5,
+body.theme-apple-jacks main h6 {
+  font-family: var(--apple-jacks-heading-font);
+  color: var(--primary-color); 
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* buttons */
+.theme-apple-jacks main a.button,
+.theme-apple-jacks main button {
+  font-family: var(--apple-jacks-body-font);
+}
+
+.theme-apple-jacks main a.button.secondary,
+.theme-apple-jacks main button.secondary {
+  border: transparent;
+  color: var(--primary-color);
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-apple-jacks main a.button.secondary:hover,
+.theme-apple-jacks main button.secondary:hover,
+.theme-apple-jacks main a.button.secondary:focus,
+.theme-apple-jacks main button.secondary:focus {
+  background-color: var(--primary-hover);
+  color: var(--white)
+}

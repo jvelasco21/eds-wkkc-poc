@@ -325,3 +325,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+	font-family: LeOsler;
+	src: url('../fonts/LeOsler/subset-LeOsler-RoughRegular.woff') format('woff'), url('../fonts/LeOsler/subset-LeOsler-RoughRegular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

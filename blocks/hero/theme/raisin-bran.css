@@ -1,0 +1,60 @@
+/* hero */
+.theme-raisin-bran .hero-homepage h1 {
+  color: var(--secondary-color);
+  text-shadow: 0 0 0.1em rgba(0 0 0 / 50%), 0 0 1em rgba(75 45 37 / 50%);
+}
+
+.theme-raisin-bran .hero .hero-background picture {
+  background: transparent radial-gradient(closest-side at 50% 50%, #DB5AA1 0%, #64154C 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10rem;
+}
+
+.theme-raisin-bran .hero .hero-background img {
+  object-fit: contain;
+  object-position: center;
+  width: 400px;
+}
+
+.theme-raisin-bran .hero-homepage .hero-foreground {
+  transform: none;
+  inset: auto 3rem 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-raisin-bran .hero-homepage .hero-foreground img {
+  display: block;
+}
+
+.theme-raisin-bran .hero-homepage a.button {
+  margin-top: 0;
+  padding: .75rem 2rem;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.theme-raisin-bran .hero-homepage .hero-foreground-item-2 {
+  order: 3;
+  display: block;
+  margin-top: -4rem;
+}
+
+.theme-raisin-bran .hero-homepage .hero-foreground .hero-foreground-item-2 img {
+  height: 400px;
+}
+
+.theme-raisin-bran .hero-homepage .hero-foreground-item-3 {
+  display: none;
+}
+
+.theme-raisin-bran .hero-homepage .hero-foreground-item-7 {
+  position: relative;
+}
+
+@media (width >= 1024px) {
+  .theme-raisin-bran .hero-homepage {
+    min-height: 40rem;
+  }
+}

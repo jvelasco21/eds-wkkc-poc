@@ -10,6 +10,13 @@
  * governing permissions and limitations under the License.
  */
 
+ @import url('theme/raisin-bran.css');
+ @import url('theme/froot-loops.css');
+ @import url('theme/apple-jacks.css');
+ @import url('theme/corn-flakes.css');
+ @import url('theme/honey-smacks.css');
+ @import url('theme/rice-krispies.css');
+
 :root {
   /* colors */
   --primary-color: #c91245;
@@ -42,6 +49,8 @@
   --froot-loops-heading-font: 'FrootLoops', sans-serif;
   --honey-smacks-font: 'Source Sans 3', sans-serif;
   --corn-flakes-font: 'KelloggSans', sans-serif;
+  --apple-jacks-heading-font: 'LeOsler', sans-serif;
+  --apple-jacks-body-font: 'Source Sans 3', sans-serif;
 
   /* body sizes */
   --body-font-size: 1rem;
@@ -74,37 +83,6 @@
   }
 }
 
-/* Theme Specific */
-.theme-raisin-bran {
-  --primary-color: #B51A8A;
-  --primary-hover: #64154C;
-  --secondary-color: #FAE158;
-}
-
-.theme-froot-loops {
-  --primary-color: #DC0031;
-  --primary-hover: #690517;
-}
-
-.theme-honey-smacks {
-  --primary-color: #388532;
-  --primary-hover: #275e23;
-  --secondary-color: #E51225;
-  --tertiary-color: #EF561D;
-}
-
-.theme-rice-krispies {
-  --primary-color: #Cd0f45;
-  --primary-hover: #9d0c35;
-  --secondary-color: #0096D9;
-  --secondary-hover: #074F89;
-}
-
-.theme-corn-flakes {
-  --primary-color: #BB0D31;
-  --secondary-color: #f0f0f0;
-}
-
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -118,27 +96,6 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
-}
-
-/* Theme specific */
-body.theme-raisin-bran main {
-  font-family: var(--raisin-bran-font);
-}
-
-body.theme-froot-loops main {
-  font-family: var(--froot-loops-body-font);
-}
-
-body.theme-honey-smacks main {
-  font-family: var(--honey-smacks-font);
-}
-
-body.theme-rice-krispies main {
-  font-family: var(--body-font-family);
-}
-
-body.theme-corn-flakes main {
-  font-family: var(--corn-flakes-font);
 }
 
 body.appear {
@@ -170,67 +127,6 @@ h4, h5, h6 {
   letter-spacing: -0.0002rem;
   scroll-margin: calc(var(--nav-height) + 1em);
   color: var(--primary-color); 
-}
-
-/* Theme specific */
-body.theme-raisin-bran main h1,
-body.theme-raisin-bran main h2,
-body.theme-raisin-bran main h3,
-body.theme-raisin-bran main h4,
-body.theme-raisin-bran main h5,
-body.theme-raisin-bran main h6 {
-  font-family: var(--raisin-bran-font);
-  color: var(--primary-hover); 
-  font-weight: 800;
-  line-height: 1;
-}
-
-body.theme-froot-loops main h1,
-body.theme-froot-loops main h2,
-body.theme-froot-loops main h3,
-body.theme-froot-loops main h4,
-body.theme-froot-loops main h5,
-body.theme-froot-loops main h6 {
-  font-family: var(--froot-loops-heading-font);
-  color: var(--black); 
-  font-weight: bold;
-  line-height: 1;
-}
-
-body.theme-honey-smacks main h1,
-body.theme-honey-smacks main h2,
-body.theme-honey-smacks main h3,
-body.theme-honey-smacks main h4,
-body.theme-honey-smacks main h5,
-body.theme-honey-smacks main h6 {
-  font-family: var(--honey-smacks-font);
-  color: var(--black); 
-  font-weight: bold;
-  line-height: 1;
-}
-
-body.theme-rice-krispies main h1,
-body.theme-rice-krispies main h2,
-body.theme-rice-krispies main h3,
-body.theme-rice-krispies main h4,
-body.theme-rice-krispies main h5,
-body.theme-rice-krispies main h6 {
-  font-family: var(--body-font-family);
-  color: var(--secondary-hover); 
-  font-weight: 800;
-  line-height: 1;
-}
-
-body.theme-corn-flakes main h1,
-body.theme-corn-flakes main h2,
-body.theme-corn-flakes main h3,
-body.theme-corn-flakes main h4,
-body.theme-corn-flakes main h5,
-body.theme-corn-flakes main h6 {
-  font-family: var(--corn-flakes-font);
-  color: var(--primary-color); 
-  font-weight: bold;
-  line-height: 1;
 }
 
 h1 em, h2 em, h3 em,
@@ -375,123 +271,6 @@ a.button.secondary, button.secondary {
 a.button.secondary:hover, button.secondary:hover,
 a.button.secondary:focus, button.secondary:focus {
   border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-/* Theme specific: Raisin Bran */
-.theme-raisin-bran main a.button,
-.theme-raisin-bran main button {
-  font-family: var(--raisin-bran-font);
-}
-
-.theme-raisin-bran main a.button.secondary,
-.theme-raisin-bran main button.secondary {
-  background-color: var(--white);
-  padding: .75rem 2rem;
-  color: var(--primary-color);
-  font-size: 1rem;
-  font-weight: 800;
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
-}
-
-.theme-raisin-bran main a.button.secondary:hover,
-.theme-raisin-bran main button.secondary:hover,
-.theme-raisin-bran main a.button.secondary:focus,
-.theme-raisin-bran main button.secondary:focus {
-  background-color: var(--primary-color);
-  color: var(--white)
-}
-
-/* Theme specific: Froot Loops */
-.theme-froot-loops main a.button,
-.theme-froot-loops main button {
-  font-family: var(--froot-loops-heading-font);
-}
-
-.theme-froot-loops main a.button.secondary,
-.theme-froot-loops main button.secondary {
-  background-color: var(--white);
-  padding: .75rem 2rem;
-  color: var(--primary-color);
-  font-size: 1rem;
-  font-weight: 800;
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
-}
-
-.theme-froot-loops main a.button.secondary:hover,
-.theme-froot-loops main button.secondary:hover,
-.theme-froot-loops main a.button.secondary:focus,
-.theme-froot-loops main button.secondary:focus {
-  color: var(--primary-hover);
-}
-
-/* Theme specific: Honey Smacks */
-.theme-honey-smacks main a.button,
-.theme-honey-smacks main button {
-  font-family: var(--honey-smacks-font);
-}
-
-.theme-honey-smacks main a.button.secondary,
-.theme-honey-smacks main button.secondary {
-  background-color: var(--white);
-  padding: .75rem 2rem;
-  color: var(--primary-color);
-  font-size: 1rem;
-  font-weight: 800;
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
-}
-
-.theme-honey-smacks main a.button.secondary:hover,
-.theme-honey-smacks main button.secondary:hover,
-.theme-honey-smacks main a.button.secondary:focus,
-.theme-honey-smacks main button.secondary:focus {
-  color: var(--primary-hover)
-}
-
-/* Theme specific: Rice Krispies */
-.theme-rice-krispies main a.button,
-.theme-rice-krispies main button {
-  font-family: var(--body-font-family);
-}
-
-.theme-rice-krispies main a.button.primary,
-.theme-rice-krispies main button.primary {
-  background-color: var(--primary-color);
-  padding: .75rem 2rem;
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.theme-rice-krispies main a.button.primary:hover,
-.theme-rice-krispies main button.primary:hover,
-.theme-rice-krispies main a.button.primary:focus,
-.theme-rice-krispies main button.primary:focus {
-  background-color: var(--primary-hover);
-  color: var(--white);
-}
-
-/* Theme specific: Corn Flakes */
-.theme-corn-flakes main a.button,
-.theme-corn-flakes main button {
-  font-family: var(--corn-flakes-font);
-}
-
-.theme-corn-flakes main a.button.primary,
-.theme-corn-flakes main button.primary {
-  background-color: var(--primary-color);
-  padding: .75rem 2rem;
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 600;
-  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
-}
-
-.theme-corn-flakes main a.button.primary:hover,
-.theme-corn-flakes main button.primary:hover,
-.theme-corn-flakes main a.button.primary:focus,
-.theme-corn-flakes main button.primary:focus {
-  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 

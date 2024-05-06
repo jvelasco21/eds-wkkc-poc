@@ -1,0 +1,47 @@
+/* colors */
+.theme-corn-flakes {
+  --primary-color: #BB0D31;
+  --secondary-color: #f0f0f0;
+}
+
+/* body */
+body.theme-corn-flakes main {
+  font-family: var(--corn-flakes-font);
+}
+
+/* headings */
+body.theme-corn-flakes main h1,
+body.theme-corn-flakes main h2,
+body.theme-corn-flakes main h3,
+body.theme-corn-flakes main h4,
+body.theme-corn-flakes main h5,
+body.theme-corn-flakes main h6 {
+  font-family: var(--corn-flakes-font);
+  color: var(--primary-color); 
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* buttons */
+.theme-corn-flakes main a.button,
+.theme-corn-flakes main button {
+  font-family: var(--corn-flakes-font);
+}
+
+.theme-corn-flakes main a.button.primary,
+.theme-corn-flakes main button.primary {
+  background-color: var(--primary-color);
+  padding: .75rem 2rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0.2em 0.2em 1em rgba(0 0 0 / 15%);
+}
+
+.theme-corn-flakes main a.button.primary:hover,
+.theme-corn-flakes main button.primary:hover,
+.theme-corn-flakes main a.button.primary:focus,
+.theme-corn-flakes main button.primary:focus {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}

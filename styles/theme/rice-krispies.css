@@ -1,0 +1,48 @@
+/* colors */
+.theme-rice-krispies {
+  --primary-color: #Cd0f45;
+  --primary-hover: #9d0c35;
+  --secondary-color: #0096D9;
+  --secondary-hover: #074F89;
+}
+
+/* body */
+body.theme-rice-krispies main {
+  font-family: var(--body-font-family);
+}
+
+/* headings */
+body.theme-rice-krispies main h1,
+body.theme-rice-krispies main h2,
+body.theme-rice-krispies main h3,
+body.theme-rice-krispies main h4,
+body.theme-rice-krispies main h5,
+body.theme-rice-krispies main h6 {
+  font-family: var(--body-font-family);
+  color: var(--secondary-hover); 
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* buttons */
+.theme-rice-krispies main a.button,
+.theme-rice-krispies main button {
+  font-family: var(--body-font-family);
+}
+
+.theme-rice-krispies main a.button.primary,
+.theme-rice-krispies main button.primary {
+  background-color: var(--primary-color);
+  padding: .75rem 2rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.theme-rice-krispies main a.button.primary:hover,
+.theme-rice-krispies main button.primary:hover,
+.theme-rice-krispies main a.button.primary:focus,
+.theme-rice-krispies main button.primary:focus {
+  background-color: var(--primary-hover);
+  color: var(--white);
+}
