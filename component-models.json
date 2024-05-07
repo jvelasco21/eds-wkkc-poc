@@ -221,6 +221,13 @@
       },
       {
         "component": "text",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "classes"}, "logo-grid"] }
+      },
+      {
+        "component": "text",
         "valueType": "number",
         "name": "columns",
         "value": "",
