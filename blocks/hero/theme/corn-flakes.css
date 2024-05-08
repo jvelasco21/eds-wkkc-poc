@@ -1,7 +1,7 @@
 /* hero */
 .theme-corn-flakes .hero-homepage h1 {
   margin: 0 0 .5rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1;
 }
 
@@ -23,10 +23,22 @@
 }
 
 .theme-corn-flakes .hero-homepage .hero-foreground {
-  inset: 50% 10rem auto auto;
+  inset: auto 6rem 0 auto;
   display: flex;
   flex-direction: column;
-  transform: translateY(-50%);
+  transform: none;
+}
+
+.theme-corn-flakes .hero-homepage .hero-foreground-item-2 {
+  order: 3;
+  display: block;
+  margin-top: 3rem;
+}
+
+.theme-corn-flakes .hero-homepage .hero-foreground .hero-foreground-item-2 picture,
+.theme-corn-flakes .hero-homepage .hero-foreground .hero-foreground-item-2 img {
+  height: 315px;
+  display: block;
 }
 
 .theme-corn-flakes .hero-homepage .hero-foreground-item-6 {
@@ -46,6 +58,6 @@
   }
 
   .theme-corn-flakes .hero-homepage .hero-foreground {
-    max-width: 36rem;
+    max-width: 42rem;
   }
 }
