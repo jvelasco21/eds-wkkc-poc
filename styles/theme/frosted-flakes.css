@@ -1,0 +1,73 @@
+/* color */
+.theme-frosted-flakes {
+  --primary-color: #0061af;
+  --primary-hover: #103869;
+  --secondary-color: #FF7F0A;
+  --secondary-hover: #ff9029;
+  --black: #231414;
+}
+
+/* body */
+body.theme-frosted-flakes main {
+  font-family: var(--frosted-flakes-font);
+  font-weight: normal;
+}
+
+/* headings */
+body.theme-frosted-flakes main h1,
+body.theme-frosted-flakes main h2,
+body.theme-frosted-flakes main h3,
+body.theme-frosted-flakes main h4,
+body.theme-frosted-flakes main h5,
+body.theme-frosted-flakes main h6 {
+  font-family: var(--frosted-flakes-font);
+  color: var(--primary-color); 
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* buttons */
+.theme-frosted-flakes main a.button,
+.theme-frosted-flakes main button {
+  font-family: var(--frosted-flakes-font);
+  color: var(--primary-color);
+}
+
+.theme-frosted-flakes main a.button:hover,
+.theme-frosted-flakes main button:hover,
+.theme-frosted-flakes main a.button:focus,
+.theme-frosted-flakes main button:focus {
+  color: var(--primary-hover);
+}
+
+.theme-frosted-flakes main a.button.primary,
+.theme-frosted-flakes main button.primary {
+  border-radius: 0;
+  background-color: var(--secondary-color);
+  color: var(--black);
+}
+
+.theme-frosted-flakes main a.button.primary:hover,
+.theme-frosted-flakes main button.primary:hover,
+.theme-frosted-flakes main a.button.primary:focus,
+.theme-frosted-flakes main button.primary:focus {
+  background-color: var(--secondary-hover);
+  color: var(--black);
+}
+
+.theme-frosted-flakes main a.button.secondary,
+.theme-frosted-flakes main button.secondary {
+  border-radius: 0;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0 0 0 / 15%);
+  border: 0;
+}
+
+.theme-frosted-flakes main a.button.secondary:hover,
+.theme-frosted-flakes main button.secondary:hover,
+.theme-frosted-flakes main a.button.secondary:focus,
+.theme-frosted-flakes main button.secondary:focus {
+  background-color: var(--secondary-hover);
+  color: var(--black);
+}

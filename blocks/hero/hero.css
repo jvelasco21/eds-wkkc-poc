@@ -125,3 +125,26 @@ main .hero-container {
     width: 1.875rem;
   }
 }
+
+.theme-frosted-flakes .hero .hero-background picture {
+  background: radial-gradient(circle farthest-corner at 50% 50%, #00539E, #003866);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 12rem;
+}
+
+.theme-frosted-flakes .hero .hero-background img {
+  object-fit: contain;
+  object-position: center;
+  width: 400px;
+}
+
+@media (width >= 1024px) {
+  .theme-frosted-flakes .hero-homepage {
+    min-height: 40rem;
+  }
+
+  .theme-frosted-flakes .hero-homepage .hero-foreground {
+    max-width: 42rem;
+  }
+}

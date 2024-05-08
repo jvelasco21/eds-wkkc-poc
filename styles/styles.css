@@ -16,6 +16,7 @@
  @import url('theme/corn-flakes.css');
  @import url('theme/honey-smacks.css');
  @import url('theme/rice-krispies.css');
+ @import url('theme/frosted-flakes.css');
 
 :root {
   /* colors */
@@ -52,6 +53,7 @@
   --corn-flakes-font: 'KelloggSans', sans-serif;
   --apple-jacks-heading-font: 'LeOsler', sans-serif;
   --apple-jacks-body-font: 'Source Sans 3', sans-serif;
+  --frosted-flakes-font: 'Mission Gothic', sans-serif;
 
   /* body sizes */
   --body-font-size: 1rem;

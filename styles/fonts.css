@@ -333,3 +333,83 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-Thin.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-ThinItalic.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-ThinItalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-Light.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-LightItalic.woff2') format('woff2'),	url('../fonts/MissionGothic/MissionGothic-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-Regular.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-RegularItalic.woff2') format('woff2'),	url('../fonts/MissionGothic/MissionGothic-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-Bold.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-BoldItalic.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-Black.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mission Gothic';
+	src: url('../fonts/MissionGothic/MissionGothic-BlackItalic.woff2') format('woff2'), url('../fonts/MissionGothic/MissionGothic-BlackItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
