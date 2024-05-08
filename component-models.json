@@ -284,20 +284,20 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "text",
+        "name": "hrefText",
         "value": "",
         "label": "Link Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "title",
+        "name": "hrefTitle",
         "value": "",
         "label": "Link Title"
       },
       {
         "component": "select",
-        "name": "type",
+        "name": "hrefType",
         "value": "",
         "label": "Link Type",
         "valueType": "string",
