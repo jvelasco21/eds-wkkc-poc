@@ -2,3 +2,24 @@
   position: relative;
   height: 400px;
 }
+
+.teaser > div {
+  position: relative;
+  z-index: 1;
+}
+
+.teaser .teaser-image {
+  position: absolute;
+  width: 100%;
+}
+
+.teaser .teaser-image p {
+  margin: 0;
+}
+
+.teaser .teaser-image img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
