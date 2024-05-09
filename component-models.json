@@ -655,61 +655,44 @@
         "valueType": "string"
       },
       {
-        "component": "boolean",
-        "label": "External URL Button?",
-        "name": "reveal",
-        "valueType": "boolean"
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "value": "",
+        "label": "Link"
       },
       {
-        "component": "container",
-        "label": "Internal Page Details",
-        "name": "container1",
+        "component": "text",
         "valueType": "string",
-        "collapsible": true,
-        "condition": { "===": [{"var" : "reveal"}, true] },
-        "fields": [
+        "name": "ctaText",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaTitle",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
           {
-            "component": "aem-content",
-            "name": "cta",
-            "value": "",
-            "label": "Page URL",
-            "valueType": "string",
-            "rootPath":"/content"
+            "name": "Default",
+            "value": ""
           },
           {
-            "component": "text",
-            "valueType": "string",
-            "name": "ctaText",
-            "value": "",
-            "label": "Text"
+            "name": "Primary",
+            "value": "primary"
           },
           {
-            "component": "text",
-            "valueType": "string",
-            "name": "ctaTitle",
-            "value": "",
-            "label": "Title"
-          },
-          {
-            "component": "select",
-            "name": "ctaType",
-            "value": "",
-            "label": "Type",
-            "valueType": "string",
-            "options": [
-              {
-                "name": "Default",
-                "value": ""
-              },
-              {
-                "name": "Primary",
-                "value": "primary"
-              },
-              {
-                "name": "Secondary",
-                "value": "secondary"
-              }
-            ]
+            "name": "Secondary",
+            "value": "secondary"
           }
         ]
       }
