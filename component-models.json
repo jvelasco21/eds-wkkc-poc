@@ -667,7 +667,7 @@
         "label": "Page URL",
         "valueType": "string",
         "rootPath":"/content",
-        "condition": { "===": [{"var" : "reveal"}, false] }
+        "condition": { "!==": [{"var" : "reveal"}, true] }
       },
       {
         "component": "text",
