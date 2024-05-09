@@ -678,14 +678,6 @@
         "condition": { "===": [{"var" : "reveal"}, true] }
       },
       {
-        "component": "aem-content",
-        "name": "cta",
-        "value": "",
-        "label": "Page URL",
-        "valueType": "string",
-        "rootPath":"/content"
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "ctaText",
