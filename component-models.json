@@ -655,11 +655,12 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "valueType": "string",
+        "component": "aem-content",
         "name": "cta",
         "value": "",
-        "label": "Link"
+        "label": "Page URL",
+        "valueType": "string",
+        "rootPath":"/content"
       },
       {
         "component": "text",
