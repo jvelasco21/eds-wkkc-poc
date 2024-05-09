@@ -672,24 +672,25 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta",
+        "name": "cta2",
         "value": "",
-        "label": "Link",
-        "condition": { "===": [{"var" : "reveal"}, true] }
+        "label": "Link"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "ctaText",
         "value": "",
-        "label": "Text"
+        "label": "Text",
+        "condition": { "!==": [{"var" : "reveal"}, true] }
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "ctaTitle",
         "value": "",
-        "label": "Title"
+        "label": "Title",
+        "condition": { "!==": [{"var" : "reveal"}, true] }
       },
       {
         "component": "select",
@@ -697,6 +698,7 @@
         "value": "",
         "label": "Type",
         "valueType": "string",
+        "condition": { "!==": [{"var" : "reveal"}, true] },
         "options": [
           {
             "name": "Default",
