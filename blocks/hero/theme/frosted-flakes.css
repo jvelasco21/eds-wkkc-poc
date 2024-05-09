@@ -1,0 +1,65 @@
+/* hero */
+.theme-frosted-flakes .hero-homepage h1 {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.theme-frosted-flakes .hero .hero-background picture {
+  background: radial-gradient(circle farthest-corner at 50% 50%, #00539E, #003866);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10rem;
+}
+
+.theme-frosted-flakes .hero .hero-background img {
+  object-fit: contain;
+  object-position: center;
+  width: 450px;
+}
+
+.theme-frosted-flakes .hero-homepage .hero-foreground {
+  transform: translateY(-50%);
+  inset: 50% 10rem auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-frosted-flakes .hero-homepage .hero-foreground img {
+  display: block;
+}
+
+.theme-frosted-flakes .hero-homepage a.button {
+  margin-top: 0;
+  padding: .75rem 1.875rem;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.theme-frosted-flakes .hero-homepage .hero-foreground-item-2 {
+  display: block;
+}
+
+.theme-frosted-flakes .hero-homepage .hero-foreground .hero-foreground-item-2 picture {
+  height: 250px;
+  display: block;
+}
+
+.theme-frosted-flakes .hero-homepage .hero-foreground .hero-foreground-item-2 img {
+  height: 250px;
+  right: 7rem;
+  position: absolute;
+}
+
+.theme-frosted-flakes .hero-homepage .hero-foreground-item-3 {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .theme-frosted-flakes .hero-homepage {
+    min-height: 40rem;
+  }
+
+  .theme-frosted-flakes .hero-homepage .hero-foreground {
+    max-width: 32rem;
+  }
+}

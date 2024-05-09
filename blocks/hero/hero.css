@@ -4,6 +4,7 @@
 @import url('theme/froot-loops.css');
 @import url('theme/honey-smacks.css');
 @import url('theme/rice-krispies.css');
+@import url('theme/frosted-flakes.css');
 
 main .hero-container > div {
   max-width: 1440px;
@@ -123,28 +124,5 @@ main .hero-container {
   .hero-homepage a.button .icon {
     height: 1.875rem;
     width: 1.875rem;
-  }
-}
-
-.theme-frosted-flakes .hero .hero-background picture {
-  background: radial-gradient(circle farthest-corner at 50% 50%, #00539E, #003866);
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 12rem;
-}
-
-.theme-frosted-flakes .hero .hero-background img {
-  object-fit: contain;
-  object-position: center;
-  width: 400px;
-}
-
-@media (width >= 1024px) {
-  .theme-frosted-flakes .hero-homepage {
-    min-height: 40rem;
-  }
-
-  .theme-frosted-flakes .hero-homepage .hero-foreground {
-    max-width: 42rem;
   }
 }
