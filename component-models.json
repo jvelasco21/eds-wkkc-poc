@@ -665,8 +665,8 @@
         "label": "Internal Page Details",
         "name": "container1",
         "valueType": "string",
-        "collapsible": false,
-        "condition": { "===": [{"var" : "reveal"}, false] },
+        "collapsible": true,
+        "condition": { "===": [{"var" : "reveal"}, true] },
         "fields": [
           {
             "component": "aem-content",
