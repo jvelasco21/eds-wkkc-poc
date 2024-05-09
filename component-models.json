@@ -593,5 +593,109 @@
         "valueType": "string"
       }
     ]
-  }
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Teaser Stacked",
+            "value": "teaser-stacked"
+          },
+          {
+            "name": "Teaser Side-by-Side",
+            "value": "teaser-side-by-side"
+          },
+          {
+            "name": "Teaser Side-by-Side",
+            "value": "teaser-style-3"
+          },
+          {
+            "name": "Teaser Side-by-Side",
+            "value": "teaser-style-4"
+          },
+          {
+            "name": "Teaser Side-by-Side",
+            "value": "teaser-style-5"
+          } 
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaText",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaTitle",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
 ]

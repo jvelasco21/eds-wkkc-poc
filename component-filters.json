@@ -16,7 +16,6 @@
       "image",
       "button",
       "title",
-      "teaser",
       "language-dropdown"
     ]
   },
@@ -33,7 +32,8 @@
       "language-dropdown",
       "carousel",
       "accordion",
-      "tabs"
+      "tabs",
+      "teaser"
     ]
   },
   {
