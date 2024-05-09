@@ -656,61 +656,60 @@
       },
       {
         "component": "boolean",
-        "label": "External CTA?",
+        "label": "External URL Button?",
         "name": "reveal",
         "valueType": "boolean"
       },
       {
-        "component": "aem-content",
-        "name": "cta",
-        "value": "",
-        "label": "Page URL",
+        "component": "container",
+        "label": "Internal Page Details",
+        "name": "container1",
         "valueType": "string",
-        "rootPath":"/content",
-        "condition": { "!==": [{"var" : "reveal"}, true] }
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "cta2",
-        "value": "",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "ctaText",
-        "value": "",
-        "label": "Text",
-        "condition": { "!==": [{"var" : "reveal"}, true] }
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "ctaTitle",
-        "value": "",
-        "label": "Title",
-        "condition": { "!==": [{"var" : "reveal"}, true] }
-      },
-      {
-        "component": "select",
-        "name": "ctaType",
-        "value": "",
-        "label": "Type",
-        "valueType": "string",
-        "condition": { "!==": [{"var" : "reveal"}, true] },
-        "options": [
+        "collapsible": false,
+        "condition": { "===": [{"var" : "reveal"}, false] },
+        "fields": [
           {
-            "name": "Default",
-            "value": ""
+            "component": "aem-content",
+            "name": "cta",
+            "value": "",
+            "label": "Page URL",
+            "valueType": "string",
+            "rootPath":"/content"
           },
           {
-            "name": "Primary",
-            "value": "primary"
+            "component": "text",
+            "valueType": "string",
+            "name": "ctaText",
+            "value": "",
+            "label": "Text"
           },
           {
-            "name": "Secondary",
-            "value": "secondary"
+            "component": "text",
+            "valueType": "string",
+            "name": "ctaTitle",
+            "value": "",
+            "label": "Title"
+          },
+          {
+            "component": "select",
+            "name": "ctaType",
+            "value": "",
+            "label": "Type",
+            "valueType": "string",
+            "options": [
+              {
+                "name": "Default",
+                "value": ""
+              },
+              {
+                "name": "Primary",
+                "value": "primary"
+              },
+              {
+                "name": "Secondary",
+                "value": "secondary"
+              }
+            ]
           }
         ]
       }
