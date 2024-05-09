@@ -655,6 +655,29 @@
         "valueType": "string"
       },
       {
+        "component": "boolean",
+        "label": "External CTA?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "aem-content",
+        "name": "cta",
+        "value": "",
+        "label": "Page URL",
+        "valueType": "string",
+        "rootPath":"/content",
+        "condition": { "===": [{"var" : "reveal"}, false] }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "value": "",
+        "label": "Link",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      },
+      {
         "component": "aem-content",
         "name": "cta",
         "value": "",
