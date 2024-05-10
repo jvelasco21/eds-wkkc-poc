@@ -32,7 +32,7 @@
         "valueType": "string",
         "name": "text",
         "value": "",
-        "label": "Textsssss"
+        "label": "Texts"
       }
     ]
   },
@@ -704,6 +704,53 @@
         "name": "link",
         "value": "",
         "label": "Image Link"
+      }
+    ]
+  },
+  {
+    "id": "text-block",
+    "fields": [
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Size",
+            "children": [
+              {
+                "name": "Large Paragraph",
+                "value": "large-paragraph"
+              },
+              {
+                "name": "Small Paragraph",
+                "value": "small-paragraph"
+              }
+            ]
+          },
+          {
+            "name": "Color",
+            "children": [
+              {
+                "name": "White Text",
+                "value": "white-text"
+              },
+              {
+                "name": "Primary Color Text",
+                "value": "primary-color-Text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Texts"
       }
     ]
   }
