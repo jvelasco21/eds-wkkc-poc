@@ -28,23 +28,6 @@
     "id": "text",
     "fields": [
       {
-        "component": "multiselect",
-        "valueType": "string",
-        "name": "classes",
-        "label": "Classes",
-        "value": "",
-        "options": [
-          {
-            "name": "Homepage Hero",
-            "value": "hero-homepage"
-          },
-          {
-            "name": "Interior Hero Alt",
-            "value": "hero-interior"
-          }
-        ]
-      },
-      {
         "component": "richtext",
         "valueType": "string",
         "name": "text",
@@ -695,6 +678,32 @@
             "value": "secondary"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "image-link",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link",
+        "value": "",
+        "label": "Image Link"
       }
     ]
   }
