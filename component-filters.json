@@ -17,7 +17,7 @@
       "button",
       "title",
       "language-dropdown",
-      "image-link"
+      "image-block"
     ]
   },
   {
@@ -35,7 +35,7 @@
       "accordion",
       "tabs",
       "teaser",
-      "image-link"
+      "image-block"
     ]
   },
   {

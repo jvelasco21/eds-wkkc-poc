@@ -682,7 +682,7 @@
     ]
   },
   {
-    "id": "image-link",
+    "id": "image-block",
     "fields": [
       {
         "component": "reference",
