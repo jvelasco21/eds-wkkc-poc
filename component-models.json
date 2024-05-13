@@ -750,7 +750,7 @@
         "valueType": "string",
         "name": "text",
         "value": "",
-        "label": "Texts"
+        "label": "Text"
       }
     ]
   }
