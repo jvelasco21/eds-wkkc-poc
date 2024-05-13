@@ -547,12 +547,30 @@
         "value": "",
         "options": [
           {
-            "name": "Homepage Hero",
-            "value": "hero-homepage"
+            "name": "Layout",
+            "children": [
+              {
+                "name": "Homepage",
+                "value": "hero-homepage"
+              },
+              {
+                "name": "Interior",
+                "value": "hero-interior"
+              },
+              {
+                "name": "Alternate",
+                "value": "hero-alternate"
+              }
+            ]
           },
           {
-            "name": "Interior Hero Alt",
-            "value": "hero-interior"
+            "name": "Options",
+            "children": [
+              {
+                "name": "Tall",
+                "value": "hero-tall"
+              }
+            ]
           }
         ]
       }
@@ -588,25 +606,31 @@
         "value": "",
         "options": [
           {
-            "name": "Teaser Stacked",
-            "value": "teaser-stacked"
+            "name": "Layout",
+            "children": [
+              {
+                "name": "Stacked",
+                "value": "teaser-stacked"
+              },
+              {
+                "name": "Side-by-Side",
+                "value": "teaser-side-by-side"
+              }
+            ]
           },
           {
-            "name": "Teaser Side-by-Side",
-            "value": "teaser-side-by-side"
-          },
-          {
-            "name": "Teaser Style 3",
-            "value": "teaser-style-3"
-          },
-          {
-            "name": "Teaser Style 4",
-            "value": "teaser-style-4"
-          },
-          {
-            "name": "Teaser Style 5",
-            "value": "teaser-style-5"
-          } 
+            "name": "Options",
+            "children": [
+              {
+                "name": "Option 1",
+                "value": "teaser-option-1"
+              },
+              {
+                "name": "Option 2",
+                "value": "teaser-option-2"
+              }
+            ]
+          }
         ]
       },
       {
