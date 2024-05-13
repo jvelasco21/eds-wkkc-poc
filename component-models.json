@@ -704,6 +704,12 @@
         "name": "link",
         "value": "",
         "label": "Image Link"
+      },
+      {
+        "component": "boolean",
+        "label": "Open link in a new window?",
+        "name": "boolean",
+        "valueType": "boolean"
       }
     ]
   },
