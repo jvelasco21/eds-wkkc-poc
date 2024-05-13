@@ -599,39 +599,9 @@
     "id": "teaser",
     "fields": [
       {
-        "component": "multiselect",
-        "valueType": "string",
-        "name": "classes",
-        "label": "Classes",
-        "value": "",
-        "options": [
-          {
-            "name": "Layout",
-            "children": [
-              {
-                "name": "Stacked",
-                "value": "teaser-stacked"
-              },
-              {
-                "name": "Side-by-Side",
-                "value": "teaser-side-by-side"
-              }
-            ]
-          },
-          {
-            "name": "Options",
-            "children": [
-              {
-                "name": "Option 1",
-                "value": "teaser-option-1"
-              },
-              {
-                "name": "Option 2",
-                "value": "teaser-option-2"
-              }
-            ]
-          }
-        ]
+        "component": "tab",
+        "label": "Images",
+        "name": "tab1"
       },
       {
         "component": "reference",
@@ -646,6 +616,11 @@
         "name": "imageAlt",
         "label": "Alt Text",
         "value": ""
+      },
+      {
+        "component": "tab",
+        "label": "Content",
+        "name": "tab2"
       },
       {
         "component": "richtext",
@@ -700,6 +675,46 @@
           {
             "name": "Secondary",
             "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Styles",
+        "name": "tab3"
+      },
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Layout",
+            "children": [
+              {
+                "name": "Stacked",
+                "value": "teaser-stacked"
+              },
+              {
+                "name": "Side-by-Side",
+                "value": "teaser-side-by-side"
+              }
+            ]
+          },
+          {
+            "name": "Options",
+            "children": [
+              {
+                "name": "Option 1",
+                "value": "teaser-option-1"
+              },
+              {
+                "name": "Option 2",
+                "value": "teaser-option-2"
+              }
+            ]
           }
         ]
       }
