@@ -1,4 +1,4 @@
-import { fetchPlaceholders, inIframeFunc, isIframe } from '../../scripts/aem.js';
+import { inIframeFunc, isIframe } from '../../scripts/aem.js';
 
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');

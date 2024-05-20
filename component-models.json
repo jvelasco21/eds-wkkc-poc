@@ -244,6 +244,23 @@
     "id": "card",
     "fields": [
       {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Classes",
+        "value": "",
+        "options": [
+          {
+            "name": "Card 1 style",
+            "value": "card-class-1"
+          },
+          {
+            "name": "Card 2 Style",
+            "value": "card-class-2"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
