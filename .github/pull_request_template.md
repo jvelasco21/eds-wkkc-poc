@@ -1,6 +1,6 @@
-Please always provide the [GitHub issue(s)](../issues) your PR is for, as well as test URLs where your change can be observed (before and after):
+Please always provide the Jira URL your PR is for, as well as test URLs where your change can be observed (before and after):
 
-Fix #<gh-issue-id>
+Jira URL: <add>
 
 Test URLs:
 - Before: https://main--{repo}--{owner}.hlx.live/
