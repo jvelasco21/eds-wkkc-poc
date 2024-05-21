@@ -264,8 +264,8 @@
           }
         },
         {
-          "title": "Breadcrumb",
-          "id": "breadcrumb",
+          "title": "Breadcrumbs",
+          "id": "breadcrumbs",
           "plugins": {
             "xwalk": {
               "page": {

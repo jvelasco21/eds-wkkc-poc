@@ -24,8 +24,8 @@
       },
       {
         "component": "text",
-        "name": "breadcrumb",
-        "label": "Breadcrumb"
+        "name": "breadcrumbs",
+        "label": "Breadcrumbs"
       }
     ]
   },
