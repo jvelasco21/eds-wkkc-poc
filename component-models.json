@@ -21,6 +21,11 @@
         "component": "text",
         "name": "footer",
         "label": "Footer"
+      },
+      {
+        "component": "text",
+        "name": "breadcrumb",
+        "label": "Breadcrumb"
       }
     ]
   },
