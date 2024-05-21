@@ -42,7 +42,7 @@ main .hero-container {
 }
 
 /* wkkellogg.com */
-.hero-homepage {
+.hero-homepage, .hero-interior {
   min-height: 49.375rem;
 }
 
@@ -97,6 +97,25 @@ main .hero-container {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(22%) hue-rotate(10deg) brightness(105%) contrast(105%);
 }
 
+.hero-interior h1 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 600;
+  line-height: 2.5625rem;
+  letter-spacing: -0.0009375rem;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-block: 0;
+}
+
+.hero-interior h1 em {
+  font-family: var(--script-font-family);
+  font-style: normal;
+  font-weight: 400;
+
+}
+
 @media (width >= 1024px) {
   .hero-homepage {
     padding: 2rem;
@@ -124,5 +143,15 @@ main .hero-container {
   .hero-homepage a.button .icon {
     height: 1.875rem;
     width: 1.875rem;
+  }
+
+  .hero-interior {
+    min-height: 27.563rem;
+  }
+
+  .hero-interior h1 {
+    font-size: 3.625rem;
+    line-height: 4.625rem;
+    letter-spacing: -0.0126875rem;
   }
 }
