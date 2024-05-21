@@ -131,7 +131,7 @@ async function buildBreadcrumbsFromNavTree(nav, currentUrl) {
 
 async function buildBreadcrumbs() {
   const breadcrumbs = document.createElement('nav');
-  breadcrumbs.className = 'breadcrumbs';
+  breadcrumbs.className = 'breadcrumbs-nav';
 
   const crumbs = await buildBreadcrumbsFromNavTree(document.querySelector('.nav-sections'), document.location.href);
 
@@ -220,11 +220,12 @@ export default async function decorate(block) {
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
   const navWrapper = document.createElement('div');
+  const breadcrumbsBlock = document.querySelector('.breadcrumbs');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
 
-  if (getMetadata('breadcrumbs').toLowerCase() === 'true') {
-    navWrapper.append(await buildBreadcrumbs());
+  if (getMetadata('breadcrumbs').toLowerCase() === 'true' && breadcrumbsBlock) {
+    breadcrumbsBlock.append(await buildBreadcrumbs());
   }
 }
