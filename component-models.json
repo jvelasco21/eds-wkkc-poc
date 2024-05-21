@@ -413,6 +413,14 @@
               {
                 "name": "No Padding",
                 "value": "no-padding"
+              },
+              {
+                "name": "Border Bottom",
+                "value": "border-bottom"
+              },
+              {
+                "name": "Centered Content",
+                "value": "centered-content"
               }
             ]
           },
