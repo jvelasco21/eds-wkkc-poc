@@ -21,6 +21,11 @@
         "component": "text",
         "name": "footer",
         "label": "Footer"
+      },
+      {
+        "component": "text",
+        "name": "breadcrumbs",
+        "label": "Breadcrumbs"
       }
     ]
   },
@@ -603,6 +608,18 @@
         "label": "Class",
         "value": ""
       },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "breadcrumbs",
+    "fields": [
       {
         "component": "richtext",
         "name": "text",
