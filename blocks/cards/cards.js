@@ -8,6 +8,14 @@ export default function decorate(block) {
     const li = document.createElement('li');
     moveInstrumentation(row, li);
     while (row.firstElementChild) li.append(row.firstElementChild);
+
+    /* applies card class to wrapping li */
+    const cardClass = li.firstElementChild.innerText.split(', ');
+    cardClass.forEach((item) => {
+      li.classList.add(item);
+    });
+    li.firstElementChild.remove();
+
     [...li.children].forEach((div) => {
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
       else div.className = 'cards-card-body';
