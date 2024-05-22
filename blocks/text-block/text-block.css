@@ -9,3 +9,48 @@
 .text-block.primary-color-text {
   color: var(--primary-color);
 }
+
+/* Social Icons List */
+.text-block.social-media-icons ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-block.social-media-icons a {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+
+.text-block.social-media-icons .icon {
+  height: 2rem;
+  width: 2rem;
+  display: block;
+}
+
+.text-block.social-media-icons img {
+  display: block;
+  filter: brightness(0) saturate(100%) invert(15%) sepia(74%) saturate(4914%) hue-rotate(334deg) brightness(84%) contrast(95%);
+  transition: 200ms;
+}
+
+.text-block.social-media-icons a:hover img,
+.text-block.social-media-icons a:focus img {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(37%) saturate(7234%) hue-rotate(331deg) brightness(84%) contrast(101%);
+}
+
+.footer .text-block.social-media-icons ul {
+  gap: 1.25rem;
+}
+
+.footer .text-block.social-media-icons ul li {
+  line-height: normal;
+}
+
+.footer .text-block.social-media-icons .icon {
+  height: 1.75rem;
+  width: 1.75rem;
+}
