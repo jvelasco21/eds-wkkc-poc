@@ -176,6 +176,19 @@
             ]
           },
           {
+            "name": "4-Column Layout Options",
+            "children": [
+              {
+                "name": "1/4 Left Column",
+                "value": "one-fourths-column"
+              },
+              {
+                "name": "3/4 Left Column",
+                "value": "three-fourths-column"
+              }
+            ]
+          },
+          {
             "name": "Options",
             "children": [
               {
@@ -193,6 +206,10 @@
               {
                 "name": "White Background",
                 "value": "col-white-bg"
+              },
+              {
+                "name": "Table Style",
+                "value": "table-style"
               }
             ]
           },
