@@ -201,6 +201,7 @@ h1 em, h2 em, h3 em,
 h4 em, h5 em, h6 em {
   font-family: var(--script-font-family);
   font-style: normal;
+  color: var(--primary-color);
 }
 
 h2 em {
