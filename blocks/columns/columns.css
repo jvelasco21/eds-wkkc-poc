@@ -174,3 +174,179 @@
     max-width: none;
   }
 }
+
+/* Timeline */
+.columns.timeline {
+  position: relative;
+}
+
+.columns.timeline > div {
+  flex-direction: row;
+  margin-bottom: 3.125rem;
+  gap: .5rem;
+}
+
+.columns.timeline > div > div {
+  scroll-margin-top: 6.75rem;
+}
+
+.columns.timeline::after {
+  content: "";
+  display: block;
+  background-color: var(--light-grey);
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 1.875rem;
+}
+
+.columns.timeline p {
+  margin-top: 0;
+}
+
+.columns.timeline h5 {
+  margin: 0 0 .5rem;
+  color: var(--black);
+  font-size: var(--body-font-size);
+  line-height: 1.5625rem;
+}
+
+.columns.timeline > div.timeline-active > div:first-child {
+  color: var(--primary-color);
+}
+
+.columns.timeline p:first-child {
+  margin: 0;
+}
+
+/* timeline date */
+.columns.timeline > div > div:first-child {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--dark-medium-grey);
+  position: relative;
+  flex: 0 0 4rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.columns.timeline > div > div:first-child p {
+  background-color: var(--white);
+}
+
+/* timeline card */
+.columns.timeline > div > div:last-child {
+  background-color: #f4f4f4;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.columns.timeline > div > div:last-child p,
+.columns.timeline > div > div:last-child h5 {
+  display: none;
+}
+
+.columns.timeline > div.timeline-active > div:last-child {
+  padding: 1.5rem 1.5rem .5rem;
+}
+
+.columns.timeline > div.timeline-active > div:last-child p,
+.columns.timeline > div.timeline-active > div:last-child h5 {
+  display: block;
+}
+
+.columns.timeline img {
+  display: block;
+  width: auto;
+  margin: 0 auto 1rem;
+}
+
+.columns.timeline .timeline-btn {
+  border: 0;
+  padding: 1rem 1.5rem 1rem 3rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: var(--dark-grey);
+  text-transform: none;
+  transition: 0s;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 9' width='15' height='9'%3E%3Cpath d='M14.8002 1.99531L7.98236 8.99453C7.91904 9.0596 7.84385 9.11123 7.76108 9.14645C7.67831 9.18168 7.5896 9.1998 7.5 9.1998C7.4104 9.1998 7.32168 9.18168 7.23892 9.14645C7.15615 9.11123 7.08096 9.0596 7.01764 8.99453L0.199801 1.99531C0.0718705 1.86398 -1.34797e-09 1.68585 0 1.50012C1.34796e-09 1.31438 0.0718705 1.13625 0.199801 1.00492C0.327731 0.873587 0.501242 0.799805 0.682163 0.799805C0.863084 0.799805 1.03659 0.873587 1.16452 1.00492L7.5 7.50982L13.8355 1.00492C13.8988 0.939891 13.974 0.888306 14.0568 0.853112C14.1395 0.817918 14.2283 0.799805 14.3178 0.799805C14.4074 0.799805 14.4961 0.817918 14.5789 0.853112C14.6617 0.888306 14.7369 0.939891 14.8002 1.00492C14.8635 1.06995 14.9138 1.14715 14.9481 1.23212C14.9824 1.31708 15 1.40815 15 1.50012C15 1.59208 14.9824 1.68315 14.9481 1.76811C14.9138 1.85308 14.8635 1.93028 14.8002 1.99531Z' /%3E%3C/svg%3E") no-repeat left 1.5rem center;
+}
+
+.columns.timeline .timeline-active .timeline-btn {
+  padding: 0;
+  background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 9' width='15' height='9'%3E%3Cpath fill='%23c91245' d='M14.8002 1.99531L7.98236 8.99453C7.91904 9.0596 7.84385 9.11123 7.76108 9.14645C7.67831 9.18168 7.5896 9.1998 7.5 9.1998C7.4104 9.1998 7.32168 9.18168 7.23892 9.14645C7.15615 9.11123 7.08096 9.0596 7.01764 8.99453L0.199801 1.99531C0.0718705 1.86398 -1.34797e-09 1.68585 0 1.50012C1.34796e-09 1.31438 0.0718705 1.13625 0.199801 1.00492C0.327731 0.873587 0.501242 0.799805 0.682163 0.799805C0.863084 0.799805 1.03659 0.873587 1.16452 1.00492L7.5 7.50982L13.8355 1.00492C13.8988 0.939891 13.974 0.888306 14.0568 0.853112C14.1395 0.817918 14.2283 0.799805 14.3178 0.799805C14.4074 0.799805 14.4961 0.817918 14.5789 0.853112C14.6617 0.888306 14.7369 0.939891 14.8002 1.00492C14.8635 1.06995 14.9138 1.14715 14.9481 1.23212C14.9824 1.31708 15 1.40815 15 1.50012C15 1.59208 14.9824 1.68315 14.9481 1.76811C14.9138 1.85308 14.8635 1.93028 14.8002 1.99531Z' /%3E%3C/svg%3E") no-repeat center center;
+  font-size: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  position: absolute;
+  border-radius: .3125rem 0 0;
+  transform: rotate(180deg);
+}
+
+@media (width >= 1024px) {
+  .columns.timeline::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .columns.timeline > div {
+    gap: 4.125rem;
+  }
+
+  .columns.timeline > div > div:first-child,
+  .columns.timeline > div > div:last-child {
+    flex: 0 1 50%;
+  }
+
+  /* date */
+  .columns.timeline > div:nth-child(odd) > div:first-child {
+    text-align: right;
+  }
+
+  .columns.timeline > div > div:first-child {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+
+  .columns.timeline > div > div:first-child p {
+    background-color: transparent;
+  }
+
+  /* date dot */
+  .columns.timeline > div > div:first-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.625rem;
+    width: 1.625rem;
+    border-radius: 100%;
+    background-color: var(--light-grey);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .columns.timeline > div.timeline-active > div:first-child::after {
+    background-color: var(--primary-color);
+  }
+
+  .columns.timeline > div:nth-child(odd) > div:first-child::after {
+    right: -2.9375rem;
+  }
+
+  .columns.timeline > div:nth-child(even) > div:first-child::after {
+    left: -2.9375rem;
+  }
+
+  .columns.timeline > div:nth-child(even) > div:first-child {
+    order: 2;
+  }
+
+  .columns.timeline > div:nth-child(even) > div:last-child {
+    order: 1;
+  }
+}
