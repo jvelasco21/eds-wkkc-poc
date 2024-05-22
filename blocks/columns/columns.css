@@ -174,3 +174,122 @@
     max-width: none;
   }
 }
+
+/* Timeline */
+.columns.timeline {
+  position: relative;
+}
+
+.columns.timeline > div {
+  flex-direction: row;
+  margin-bottom: 3.125rem;
+  gap: .5rem;
+}
+
+.columns.timeline::after {
+  content: "";
+  display: block;
+  background-color: var(--light-grey);
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 1.875rem;
+}
+
+.columns.timeline p {
+  margin-top: 0;
+}
+
+.columns.timeline p:first-child {
+  margin: 0;
+}
+
+/* timeline date */
+.columns.timeline > div > div:first-child {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--dark-medium-grey);
+  position: relative;
+  flex: 0 0 4rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.columns.timeline > div > div:first-child p {
+  background-color: var(--white);
+}
+
+/* timeline card */
+.columns.timeline > div > div:last-child {
+  background-color: #f4f4f4;
+  padding: 1.5rem 1.5rem .5rem;
+  width: 100%;
+}
+
+.columns.timeline img {
+  display: block;
+  width: auto;
+  margin: 0 auto 1rem;
+}
+
+@media (width >= 1024px) {
+  .columns.timeline::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .columns.timeline > div {
+    gap: 4.125rem;
+  }
+
+  .columns.timeline > div > div:first-child,
+  .columns.timeline > div > div:last-child {
+    flex: 0 1 50%;
+  }
+
+  /* date */
+  .columns.timeline > div:nth-child(odd) > div:first-child {
+    text-align: right;
+  }
+
+  .columns.timeline > div > div:first-child {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+
+  .columns.timeline > div > div:first-child p {
+    background-color: transparent;
+  }
+
+  /* date dot */
+  .columns.timeline > div > div:first-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.625rem;
+    width: 1.625rem;
+    border-radius: 100%;
+    background-color: var(--light-grey);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .columns.timeline > div:nth-child(odd) > div:first-child::after {
+    right: -3rem;
+  }
+
+  .columns.timeline > div:nth-child(even) > div:first-child::after {
+    left: -2.9375rem;
+  }
+
+  .columns.timeline > div:nth-child(even) > div:first-child {
+    order: 2;
+  }
+
+  .columns.timeline > div:nth-child(even) > div:last-child {
+    order: 1;
+  }
+}
