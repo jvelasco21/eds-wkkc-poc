@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/eds-wkkc-poc/:/",
-    "/content/eds-wkkc-poc/metadata:/metadata.json"
+    "/content/eds-wkkc-poc/metadata:/metadata.json",
+    "/content/eds-wkkc-poc/placeholders:/placeholders.json"
   ]
 }
