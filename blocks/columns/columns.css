@@ -69,7 +69,13 @@
 .columns.light-text h3,
 .columns.light-text h4,
 .columns.light-text h5,
-.columns.light-text h6 {
+.columns.light-text h6,
+.columns.light-text h1 em,
+.columns.light-text h2 em,
+.columns.light-text h3 em,
+.columns.light-text h4 em,
+.columns.light-text h5 em,
+.columns.light-text h6 em{
   color: var(--white);
 }
 
