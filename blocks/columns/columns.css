@@ -138,9 +138,17 @@
   height: 100%;
 }
 
+.columns.table-style > div {
+  gap: 0;
+}
+
 .columns.table-style > div > div {
   border: 2px solid var(--dark-medium-grey);
   padding: 1rem;
+}
+
+.columns.table-style strong {
+  font-weight: 400;
 }
 
 @media (width >= 1024px) {
@@ -174,14 +182,6 @@
 
   .columns.three-fourths-column > div > div:last-child {
     flex-basis: 25%;
-  }
-
-  .columns.table-style > div {
-    gap: 0;
-  }
-
-  .columns.table-style strong {
-    font-weight: 400;
   }
 
   .columns.large-text p {
