@@ -659,6 +659,18 @@
     ]
   },
   {
+    "id": "video",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "label": "video URL",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "breadcrumbs",
     "fields": [
       {
