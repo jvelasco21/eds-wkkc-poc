@@ -280,7 +280,7 @@
         },
         {
           "title": "Embed",
-          "id": "Embed",
+          "id": "embed",
           "plugins": {
             "xwalk": {
               "page": {
