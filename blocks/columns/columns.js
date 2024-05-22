@@ -29,6 +29,30 @@ export default function decorate(block) {
           e.preventDefault();
         });
       }
+
+      // timeline toggle
+      if (col.closest('.timeline') && col.querySelector('h5')) {
+        const title = col.querySelector('h5').innerHTML;
+        const button = document.createElement('button');
+        button.innerHTML = title;
+        button.setAttribute('type', 'button');
+        button.classList.add('timeline-btn');
+        col.prepend(button);
+
+        button.addEventListener('click', (e) => {
+          const activeElem = document.querySelector('.timeline-active');
+          const parentRow = e.target.parentElement.parentElement;
+
+          if (activeElem !== null && !parentRow.classList.contains('timeline-active')) {
+            activeElem.classList.remove('timeline-active');
+          }
+          col.parentElement.classList.toggle('timeline-active');
+          col.scrollIntoView({
+            behavior: 'smooth',
+          });
+          e.preventDefault();
+        });
+      }
     });
   });
 }
