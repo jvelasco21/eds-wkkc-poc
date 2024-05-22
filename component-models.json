@@ -630,6 +630,18 @@
     ]
   },
   {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "label": "Iframe URL",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "breadcrumbs",
     "fields": [
       {
