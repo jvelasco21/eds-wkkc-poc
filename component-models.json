@@ -845,6 +845,15 @@
                 "value": "primary-color-Text"
               }
             ]
+          },
+          {
+            "name": "Unique Layouts",
+            "children": [
+              {
+                "name": "Social Media Icons",
+                "value": "social-media-icons"
+              }
+            ]
           }
         ]
       },
