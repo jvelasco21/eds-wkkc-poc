@@ -370,6 +370,15 @@ main .section.tertiary-bg-section > div {
   padding: 3rem 1.4375rem;
 }
 
+main .section.border-bottom > div {
+  border-bottom: .125rem var(--light-grey) solid;
+  padding: 1.0625rem .75rem;
+}
+
+main .section.centered-content > .default-content-wrapper {
+  text-align: center;
+}
+
 @media (width >= 1024px) {
   main .section.primary-bg-section > div,
   main .section.tertiary-bg-section > div {
@@ -378,5 +387,9 @@ main .section.tertiary-bg-section > div {
 
   main .section.pre-footer-section {
     padding: 5rem 1rem;
+  }
+
+  main .section.border-bottom > div {
+    max-width: 1418px;
   }
 }
