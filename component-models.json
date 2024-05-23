@@ -665,8 +665,15 @@
         "component": "text",
         "valueType": "string",
         "name": "href",
-        "label": "video URL",
+        "label": "Video URL",
         "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Placeholder Image",
+        "multi": false
       }
     ]
   },
