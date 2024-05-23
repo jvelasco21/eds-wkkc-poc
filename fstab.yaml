@@ -1,5 +1,0 @@
-mountpoints:
-  /:
-    url: "https://author-p11802-e92257.adobeaemcloud.com/bin/franklin.delivery/jvelasco21/eds-wkkc-poc/main"
-    type: "markup"
-    suffix: ".html"
