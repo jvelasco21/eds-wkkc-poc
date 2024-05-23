@@ -32,14 +32,12 @@
   height: 2em;
   border: 2px solid;
   border-width: .3em .3em 0 0;
-  transition: transform .1s .2s, top .1s .2s;
 }
 
 .accordion details[open] summary::after {
   transform: scaleY(-1) rotate(135deg);
   top: 50%;
   border-color: var(--primary-color);
-  transition: transform .1s, top .1s;
 }
 
 .accordion details summary p {
@@ -49,14 +47,10 @@
 .accordion details .accordion-item-body {
   padding: 0 1rem;
   margin-top: -1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all .25s;
 }
 
 .accordion details[open] .accordion-item-body {
   background-color: var(--background-color);
-  max-height: 250px;
 }
 
 .accordion details .accordion-item-body ul {
