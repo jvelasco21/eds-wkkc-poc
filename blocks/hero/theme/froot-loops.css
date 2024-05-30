@@ -14,18 +14,18 @@
   background: radial-gradient(ellipse farthest-corner at 50% -30%, #DC0031 0%, #DC0031 60%, #690517 120%);
   display: flex;
   justify-content: flex-start;
-  padding-left: 10rem;
+  padding: 5rem 3rem 0;
 }
 
 .theme-froot-loops .hero .hero-background img {
   object-fit: contain;
-  object-position: center;
+  object-position: top;
   width: 450px;
 }
 
 .theme-froot-loops .hero-homepage .hero-foreground {
   transform: none;
-  inset: auto 12rem 5rem auto;
+  inset: auto auto 5rem auto;
 }
 
 .hero-homepage .hero-foreground .hero-foreground-item-2 img {
@@ -47,5 +47,17 @@
 
   .theme-froot-loops .hero-homepage .hero-foreground {
     max-width: 30rem;
+  }
+
+  .theme-froot-loops .hero .hero-background picture {
+    padding: 0 0 0 10rem;
+  }
+
+  .theme-froot-loops .hero .hero-background img {
+    object-position: center;
+  }
+
+  .theme-froot-loops .hero-homepage .hero-foreground {
+    inset: auto 12rem 5rem auto;
   }
 }
