@@ -21,6 +21,7 @@
   object-fit: contain;
   object-position: top;
   width: 450px;
+  margin: auto;
 }
 
 .theme-froot-loops .hero-homepage .hero-foreground {
@@ -55,6 +56,7 @@
 
   .theme-froot-loops .hero .hero-background img {
     object-position: center;
+    margin: 0;
   }
 
   .theme-froot-loops .hero-homepage .hero-foreground {
